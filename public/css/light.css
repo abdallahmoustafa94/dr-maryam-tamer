@@ -981,6 +981,7 @@ span:hover {
   -ms-user-select: none;
   user-select: none;
   /* z-index: 99999999999999; */
+  visibility: hidden;
   position: fixed;
   margin: auto;
   top: 0;
