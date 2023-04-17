@@ -17,4 +17,3 @@ node_modules/
 .vscode/
 
 # Ignore log files
-logs/
