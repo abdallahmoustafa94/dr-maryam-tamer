@@ -50,7 +50,7 @@ const BlogDetailsLight = () => {
             <video data-overlay-dark="6" className="bg-img valign hero-video" style={{width:'100%',height:!isMobile && '50vh',margin:'auto'}}  autoPlay loop muted>
 <source src={ "/final/case1video.mp4"} type="video/mp4" />
 </video>
-              <div className="content pt-60">
+              <div className="content">
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
                   <div className="text">
