@@ -13,29 +13,29 @@ import Team from "../../components/Team/team";
 import MinimalArea from "../../components/Minimal-Area/minimal-area";
 
 const About = () => {
- const navbarRef = React.useRef(null);
- const logoRef = React.useRef(null);
+  const navbarRef = React.useRef(null);
+  const logoRef = React.useRef(null);
 
- React.useEffect(() => {
-   var navbar = navbarRef.current,
-     logo = logoRef.current;
-   if (window.pageYOffset > 300) {
-     navbar.classList.add("nav-scroll");
-   } else {
-     navbar.classList.remove("nav-scroll");
-   }
-   window.addEventListener("scroll", () => {
-     if (window.pageYOffset > 300) {
-       navbar.classList.add("nav-scroll");
-     } else {
-       navbar.classList.remove("nav-scroll");
-     }
-   });
- }, [navbarRef]);
+  React.useEffect(() => {
+    var navbar = navbarRef.current,
+      logo = logoRef.current;
+    if (window.pageYOffset > 300) {
+      navbar.classList.add("nav-scroll");
+    } else {
+      navbar.classList.remove("nav-scroll");
+    }
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        navbar.classList.add("nav-scroll");
+      } else {
+        navbar.classList.remove("nav-scroll");
+      }
+    });
+  }, [navbarRef]);
   return (
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <PagesHeader />
+      <PagesHeader title="Unleash your smile's potential" />
       <AboutIntro />
       <MinimalArea />
       <CallToAction />

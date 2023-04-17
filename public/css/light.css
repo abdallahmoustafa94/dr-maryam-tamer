@@ -1245,9 +1245,7 @@ span:hover {
 
 /* ====================== [ End Text Animation & Images ] ====================== */
 /* ====================== [ Start Cursor Style ] ====================== */
-body {
-  cursor: none;
-}
+
 
 .mouse-cursor {
   position: fixed;
@@ -1257,7 +1255,7 @@ body {
   border-radius: 50%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  visibility: hidden;
+  visibility: visible;
 }
 
 .cursor-inner {
@@ -1266,7 +1264,6 @@ body {
   width: 6px;
   height: 6px;
   z-index: 10000001;
-  background-color: #12c2e9;
   -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
@@ -1280,8 +1277,6 @@ body {
   margin-top: -40px;
   width: 80px;
   height: 80px;
-  background-color: #12c2e9;
-  opacity: 0.3;
 }
 
 .cursor-outer {
