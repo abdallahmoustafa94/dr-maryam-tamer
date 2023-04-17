@@ -5,12 +5,13 @@ import CallToAction from "../../components/Call-to-action/call-to-action";
 import Footer from "../../components/Footer/footer";
 import PagesHeader from "../../components/Pages-header";
 import LightTheme from '../../layouts/Light'
-
+import useMediaQuery from "../../hooks/useMediaQuery";
 import Split from "../../components/Split";
 
 const About = () => {
  const navbarRef = React.useRef(null);
  const logoRef = React.useRef(null);
+ const isMobile = useMediaQuery('(max-width: 768px)');
 
  React.useEffect(() => {
    var navbar = navbarRef.current,
@@ -37,7 +38,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4">
                   <div className="wow imago valign " data-wow-delay=".3s">
-                  <video data-overlay-dark="6" className="bg-img valign hero-video" style={{width:'90%'}}  autoPlay loop muted>
+                  <video data-overlay-dark="6" className="bg-img valign hero-video" style={{width: isMobile? '100%' : '90%'}}  autoPlay loop muted>
 <source src={ "/final/bleaching.mp4"} type="video/mp4" />
 </video>
                   </div>
