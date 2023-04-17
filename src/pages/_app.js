@@ -6,21 +6,13 @@ import ScrollToTop from "../components/scrollToTop";
 import LoadingScreen from "../components/Loading-Screen";
 import "../styles/main.scss";
 
+
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "/js/wow.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    script.onload = () => {
-      new WOW().init();
-    };
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  const isServer = typeof window === 'undefined'
+const WOW = !isServer ? require('wow.js') : null
+  useEffect(()=>{
+    new WOW().init()
+  },[])
   return (
     <>
       <Head>
@@ -31,7 +23,6 @@ function MyApp({ Component, pageProps }) {
       <LoadingScreen />
       <Component {...pageProps} />
       <ScrollToTop />
-    
       <Script
         strategy="beforeInteractive"
         id="splitting"
