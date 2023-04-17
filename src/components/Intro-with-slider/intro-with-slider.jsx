@@ -39,7 +39,7 @@ const IntroWithSlider = ({ sliderRef }) => {
       <div className="swiper-container parallax-slider">
         {!load ? (
           <Swiper
-        
+
             speed={1000}
             parallax={true}
             navigation={{
@@ -82,60 +82,60 @@ const IntroWithSlider = ({ sliderRef }) => {
             className="swiper-wrapper"
             slidesPerView={1}
           >
-              <SwiperSlide  className="swiper-slide">
-                <div
-                  className="bg-img move valign"
-                  style={{ backgroundImage: isMobile ? `none` : `url(/final/cover.jpeg)`}}
-                  data-overlay-dark="6"
-                >
+            <SwiperSlide className="swiper-slide">
+              <div
+                className="bg-img move valign"
+                style={{ backgroundImage: isMobile ? `none` : `url(/final/cover.jpeg)` }}
+                data-overlay-dark="6"
+              >
 
-{isMobile && (
+                {isMobile && (
 
-<video data-overlay-dark="6" className="bg-img valign hero-video" style={{height:'100vh'}} autoPlay loop muted>
-<source src={ "/final/video-2.mp4"} type="video/mp4" />
-</video>
-)}
-                  <div className="container">
-                    <div className="row justify-content-center">
-                      <div className="col-lg-8 col-md-10">
-                        <div className="caption center mt-30">
-                          <h1>Dr.Maryam Tamer</h1>
-                           <p style={{fontSize:'24px'}}>The perfect smile is just a visit away</p>
-                          <Link href="/about/about-dark">
-                            <a className="butn bord curve mt-30">
-                              <span>Get an appointment</span>
-                            </a>
-                          </Link>
-                        </div>
+                  <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ height: '100vh' }} autoPlay loop muted>
+                    <source src={"/final/video-2.mp4"} type="video/mp4" />
+                  </video>
+                )}
+                <div className="container">
+                  <div className="row justify-content-center">
+                    <div className="col-lg-8 col-md-10">
+                      <div className="caption center mt-30">
+                        <h1>Dr.Maryam Tamer</h1>
+                        <p style={{ fontSize: '24px' }}>The perfect smile is just a visit away</p>
+                        <Link href="/contact/">
+                          <a className="butn bord curve mt-30">
+                            <span>Get an appointment</span>
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide  className="swiper-slide"> 
-                <div
-                  className="bg-img valign"
-                  style={{ backgroundImage: isMobile ? `url(/final/covermob.jpeg)` : `url(/final/cover-2.jpeg)`}}
-                  data-overlay-dark="6"
-                >
-                 
-                  <div className="container">
-                    <div className="row justify-content-center">
-                      <div className="col-lg-8 col-md-10">
-                        <div className="caption center mt-30">
-                          <h1 >Dr.Maryam Tamer</h1>
-                           <p style={{fontSize:'24px'}}>Beyond Dentistry, Above Expectations!</p>
-                          <Link href="/about/about-dark">
-                            <a className="butn bord curve mt-30">
-                              <span>Get an appointment</span>
-                            </a>
-                          </Link>
-                        </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div
+                className="bg-img valign"
+                style={{ backgroundImage: isMobile ? `url(/final/covermob.jpeg)` : `url(/final/cover-2.jpeg)` }}
+                data-overlay-dark="6"
+              >
+
+                <div className="container">
+                  <div className="row justify-content-center">
+                    <div className="col-lg-8 col-md-10">
+                      <div className="caption center mt-30">
+                        <h1 >Dr.Maryam Tamer</h1>
+                        <p style={{ fontSize: '24px' }}>Beyond Dentistry, Above Expectations!</p>
+                        <Link href="/contact/">
+                          <a className="butn bord curve mt-30">
+                            <span>Get an appointment</span>
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </div>
+            </SwiperSlide>
           </Swiper>
         ) : null}
         <div className="setone setwo">
@@ -154,7 +154,7 @@ const IntroWithSlider = ({ sliderRef }) => {
         </div>
         <div ref={paginationRef} className="swiper-pagination top botm"></div>
 
-       
+
       </div>
     </header>
   );
