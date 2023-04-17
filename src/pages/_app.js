@@ -7,18 +7,19 @@ import LoadingScreen from "../components/Loading-Screen";
 import "../styles/main.scss";
 
 function MyApp({ Component, pageProps }) {
- 
-useEffect(()=>{
-  if (typeof window !== "undefined") {
+
+  useEffect(() => {
     const script = document.createElement("script");
-    script.id = "wowInit";
-    script.src = "/js/wow.min.js";
+    script.src = "/js/wow.min.js"; // update with correct script URL
     script.onload = () => {
       new WOW().init();
     };
     document.body.appendChild(script);
-  }
-},[])
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <>
       <Head>
