@@ -38,7 +38,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4">
                   <div className="wow imago valign " data-wow-delay=".3s">
-                    <img src="/final/case3.jpeg" alt="" style={{width:isMobile ? '100%' : '90%'}}/>
+                    <img src="/final/case3.jpeg" alt="" style={{width:isMobile ? "100%" : "90%"}}/>
                   </div>
           </div>
                

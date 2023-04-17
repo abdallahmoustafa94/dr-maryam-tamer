@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Navbar from "../../components/Navbar/navbar";
 
@@ -37,7 +38,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4">
                   <div className="wow imago valign " data-wow-delay=".3s">
-                    <img src="/final/services1.jpeg" alt="" style={{width:isMobile ? '100%' : '90%'}}/>
+                    <img src="/final/services1.jpeg"  style={{width:isMobile ? "100%" : "90%"}}/>
                   </div>
           </div>
                
