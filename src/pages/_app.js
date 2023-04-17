@@ -8,10 +8,11 @@ import "../styles/main.scss";
 
 
 function MyApp({ Component, pageProps }) {
-  const isServer = typeof window === 'undefined'
-const WOW = !isServer ? require('wow.js') : null
+const WOW = require('wow.js') 
   useEffect(()=>{
-    new WOW().init()
+    if(typeof window !== 'undefined'){
+      new WOW().init()
+    }
   },[])
   return (
     <>
