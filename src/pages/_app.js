@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import Head from "next/head";
 import Script from "next/script";
 import Cursor from "../components/cursor";
@@ -7,19 +7,6 @@ import LoadingScreen from "../components/Loading-Screen";
 import "../styles/main.scss";
 
 function MyApp({ Component, pageProps }) {
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "/js/wow.min.js"; // update with correct script URL
-    script.onload = () => {
-      new WOW().init();
-    };
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
   return (
     <>
       <Head>
@@ -30,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       <LoadingScreen />
       <Component {...pageProps} />
       <ScrollToTop />
+      <Script strategy="beforeInteractive" id="wow" src="/js/wow.min.js"></Script>
       <Script
         strategy="beforeInteractive"
         id="splitting"
@@ -41,6 +29,7 @@ function MyApp({ Component, pageProps }) {
         strategy="beforeInteractive"
         src="/js/isotope.pkgd.min.js"
       ></Script>
+      <Script id="wowInit" strategy="lazyOnload">{`new WOW().init();`}</Script>
     </>
   );
 }
