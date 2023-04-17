@@ -30,7 +30,6 @@ function MyApp({ Component, pageProps }) {
       <LoadingScreen />
       <Component {...pageProps} />
       <ScrollToTop />
-      <Script id="wow" src="/js/wow.min.js"></Script>
       <Script
         strategy="beforeInteractive"
         id="splitting"
