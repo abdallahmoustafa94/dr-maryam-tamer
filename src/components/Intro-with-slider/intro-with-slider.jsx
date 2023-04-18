@@ -20,11 +20,6 @@ const IntroWithSlider = ({ sliderRef }) => {
   const videoRef = useRef(null);
 
   React.useEffect(() => {
-    const video = videoRef.current;
-
-    video.play();
-
-
     fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
     setTimeout(() => {
       removeSlashFromPagination();
@@ -39,6 +34,10 @@ const IntroWithSlider = ({ sliderRef }) => {
   const paginationRef = React.useRef(null);
 
   const isMobile = useMediaQuery('(max-width: 768px)');
+
+  const backgroundImage = isMobile
+    ? '/final/covermob.jpeg'
+    : '/final/cover-2.jpeg';
 
   return (
     <header
@@ -92,6 +91,32 @@ const IntroWithSlider = ({ sliderRef }) => {
             slidesPerView={1}
 
           >
+
+            <SwiperSlide className="swiper-slide">
+
+              <div
+                className="bg-img valign"
+                style={{ backgroundImage: `url(/final/covermob.jpeg)` }}
+                data-overlay-dark="6"
+              >
+                <div className="container">
+                  <div className="row justify-content-center">
+                    <div className="col-lg-8 col-md-10">
+                      <div className="caption center mt-30">
+                        <h1 >Dr.Maryam Tamer</h1>
+                        <p style={{ fontSize: '24px' }}>Beyond Dentistry, Above Expectations!</p>
+                        <Link href="/contact/">
+                          <a className="butn bord curve mt-30">
+                            <span>Get an appointment</span>
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide className="swiper-slide">
               <div
                 className="bg-img move valign"
@@ -101,7 +126,7 @@ const IntroWithSlider = ({ sliderRef }) => {
 
                 {isMobile && (
 
-                  <video ref={videoRef} id="my-video" data-overlay-dark="6" className="bg-img valign hero-video" style={{ height: '100vh' }} playsInline preload="auto" autoPlay loop muted>
+                  <video id="my-video" data-overlay-dark="6" className="bg-img valign hero-video" style={{ height: '100vh' }} playsInline preload="auto" autoPlay loop muted>
                     <source src={"/final/video-2.mp4"} type="video/mp4" />
                   </video>
                 )}
@@ -122,30 +147,7 @@ const IntroWithSlider = ({ sliderRef }) => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <div
-                className="bg-img valign"
-                style={{ backgroundImage: isMobile ? `url(/final/covermob.jpeg)` : `url(/final/cover-2.jpeg)` }}
-                data-overlay-dark="6"
-              >
 
-                <div className="container">
-                  <div className="row justify-content-center">
-                    <div className="col-lg-8 col-md-10">
-                      <div className="caption center mt-30">
-                        <h1 >Dr.Maryam Tamer</h1>
-                        <p style={{ fontSize: '24px' }}>Beyond Dentistry, Above Expectations!</p>
-                        <Link href="/contact/">
-                          <a className="butn bord curve mt-30">
-                            <span>Get an appointment</span>
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
           </Swiper>
         ) : null}
         <div className="setone setwo">

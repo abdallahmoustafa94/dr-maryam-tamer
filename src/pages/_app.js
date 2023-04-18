@@ -28,6 +28,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Dr.Maryam Tamer</title>
         <link rel="icon" href="/final/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
       </Head>
       <Cursor />
       {/* <LoadingScreen /> */}

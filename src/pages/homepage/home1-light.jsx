@@ -31,7 +31,7 @@ const Homepage1 = () => {
         MainContent.current.style.marginTop = slidHeight + "px";
       }
 
-    }, 1000);
+    }, 0);
     var navbar = navbarRef.current,
       logo = logoRef.current;
     if (window.pageYOffset > 300) {
