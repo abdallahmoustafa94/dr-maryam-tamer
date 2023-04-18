@@ -30,8 +30,8 @@ const Homepage1 = () => {
       if (MainContent.current) {
         MainContent.current.style.marginTop = slidHeight + "px";
       }
-      
-    }, 1000);
+
+    }, 0);
     var navbar = navbarRef.current,
       logo = logoRef.current;
     if (window.pageYOffset > 300) {
@@ -60,10 +60,10 @@ const Homepage1 = () => {
           <div className="col-lg-8 col-md-10">
             <div className="sec-head text-center">
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-              Unmatched Smile Enhancements!
+                Unmatched Smile Enhancements!
               </h6>
               <h3 className="wow">
-              Seeing is Believing. <br />Here Are Some Cases.
+                Seeing is Believing. <br />Here Are Some Cases.
               </h3>
             </div>
           </div>
