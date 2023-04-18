@@ -16,7 +16,7 @@ import fadeWhenScroll from "../../common/fadeWhenScroll";
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
 const IntroWithSlider = ({ sliderRef }) => {
-  const [load, setLoad] = React.useState(false);
+  const [load, setLoad] = React.useState(true);
   const videoRef = useRef(null);
 
   React.useEffect(() => {
@@ -96,7 +96,7 @@ const IntroWithSlider = ({ sliderRef }) => {
 
               <div
                 className="bg-img valign"
-                style={{ backgroundImage: `url(/final/covermob.jpeg)` }}
+                style={{ backgroundImage: isMobile ? `url(/final/covermob.jpeg)` : `url(/final/cover-2.jpeg)` }}
                 data-overlay-dark="6"
               >
                 <div className="container">
