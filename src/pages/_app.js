@@ -6,14 +6,23 @@ import ScrollToTop from "../components/scrollToTop";
 import LoadingScreen from "../components/Loading-Screen";
 import "../styles/main.scss";
 
-
 function MyApp({ Component, pageProps }) {
-const WOW = require('wow.js') 
-  useEffect(()=>{
-    if(typeof window !== 'undefined'){
-      new WOW().init()
-    }
-  },[])
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "/js/wow.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      new WOW().init();
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -21,9 +30,10 @@ const WOW = require('wow.js')
         <link rel="icon" href="/final/logo.png" />
       </Head>
       <Cursor />
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
       <Component {...pageProps} />
       <ScrollToTop />
+      {/* <Script strategy="beforeInteractive" id="wow" src="/js/wow.min.js"></Script> */}
       <Script
         strategy="beforeInteractive"
         id="splitting"
@@ -35,6 +45,7 @@ const WOW = require('wow.js')
         strategy="beforeInteractive"
         src="/js/isotope.pkgd.min.js"
       ></Script>
+      {/* <Script id="wowInit" strategy="lazyOnload">{`new WOW().init();`}</Script> */}
     </>
   );
 }

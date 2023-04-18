@@ -8,7 +8,7 @@ const LoadingScreen = () => {
     let bodyEl = document.querySelector("body");
     if (appData.showLoading) {
       loadingPace();
-      
+
       if (bodyEl.classList.contains("hideX")) {
         bodyEl.classList.remove("hideX");
       }
