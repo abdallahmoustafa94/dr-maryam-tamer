@@ -38,7 +38,7 @@ const MinimalArea = () => {
                     <span>2</span>Vision
                   </h6>
                   <p>
-                  Becoming a trusted leader in dental care, known for innovative solutions and outstanding patient experience.luctus massa ipsum at tempus eleifend congue lectus bibendum
+                  Becoming a trusted leader in dental care, known for innovative solutions and outstanding patient experience.
                   </p>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".6s">
