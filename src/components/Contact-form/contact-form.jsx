@@ -33,7 +33,7 @@ const ContactForm = () => {
                 <h5>
                   <a href="#0">info@drmaryamtamer.com</a>
                 </h5>
-                <h5>01024188478</h5>
+                <a href="tel:00201024188478"> <h5>01024188478</h5></a>
               </div>
               <h3 className="wow" data-splitting>
                 Visit Us.
