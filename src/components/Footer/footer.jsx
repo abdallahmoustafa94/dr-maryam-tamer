@@ -32,13 +32,13 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Phone</h6>
-                    <p>01024188478</p>
+                    <a href="tel:00201024188478"> <p>01024188478</p></a>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-       
+
           <div className="col-lg-6">
             <div className="item">
               <div className="logo">
@@ -51,16 +51,16 @@ const Footer = ({ hideBGCOLOR }) => {
                 <a href="#0">
                   <i className="fab fa-instagram"></i>
                 </a>
-              
+
               </div>
               <div className="copy-right">
                 <p>
                   © 2023 {''}
                   <Link
                     href="#"
-                    
+
                   >
-                    <a target="_blank" style={{color:'gray'}}>Dr.Maryam Tamer</a>
+                    <a target="_blank" style={{ color: 'gray' }}>Dr.Maryam Tamer</a>
                   </Link>
                   .
                 </p>

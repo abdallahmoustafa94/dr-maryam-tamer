@@ -17,6 +17,8 @@
     "react-compare-image": "^3.4.0",
     "react-countup": "^6.1.0",
     "react-dom": "17.0.2",
+    "react-floating-whatsapp": "^5.0.8",
+    "react-icons": "^4.8.0",
     "react-loadable": "^5.5.0",
     "react-modal-video": "^1.2.8",
     "react-scroll": "^1.8.4",
