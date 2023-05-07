@@ -15,7 +15,7 @@ import Footer from "../../components/Footer/footer";
 import LightTheme from "../../layouts/Light";
 import Cases from "../../components/cases";
 import Portfolio from "../../components/Portfolio/portfolio";
-
+import ShowcasesGrid from "../../components/Showcases-grid/Showcases-grid";
 const Homepage1 = () => {
   const fixedSlider = React.useRef(null);
   const MainContent = React.useRef(null);
@@ -68,7 +68,7 @@ const Homepage1 = () => {
             </div>
           </div>
         </div>
-        <Portfolio grid={2} filterPosition="left" />
+        <ShowcasesGrid />
         <CallToAction />
         <Footer />
       </div>

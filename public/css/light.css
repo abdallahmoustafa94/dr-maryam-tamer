@@ -2258,6 +2258,7 @@ span:hover {
 /* ====================== [ Start Slider ] ====================== */
 .slider {
   position: relative;
+  display: block;
 }
 
 .slider.fixed-slider {
@@ -2448,11 +2449,14 @@ span:hover {
 }
 
 .slider .txt-botm {
-  position: absolute;
+  /* position: absolute;
   bottom: 20px;
-  left: 0;
+  left: 0; */
   width: 100%;
   z-index: 8;
+  display: block;
+  transform: translateY(60px);
+  margin-bottom: 100px;
 }
 
 .slider .txt-botm .swiper-nav-ctrl {
