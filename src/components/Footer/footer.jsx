@@ -32,7 +32,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Phone</h6>
-                    <a href="tel:00201024188478"> <p>01024188478</p></a>
+                    <a href="tel:201024188478"> <p>01024188478</p></a>
                   </div>
                 </li>
               </ul>
