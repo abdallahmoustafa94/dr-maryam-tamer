@@ -28,7 +28,7 @@ export default () => {
     <div className="container">
       <header className='slider'>
         <Swiper
-          slidesPerView={2}
+          slidesPerView={1}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
           navigation={{
@@ -39,12 +39,7 @@ export default () => {
             0: {
               slidesPerView: 1,
             },
-            640: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
+
             1024: {
               slidesPerView: 2,
             },
@@ -59,9 +54,9 @@ export default () => {
               swiper.params.navigation.prevEl = navigationPrevRef.current;
               swiper.params.navigation.nextEl = navigationNextRef.current;
 
-              // swiper.navigation.destroy();
-              // swiper.navigation.init();
-              // swiper.navigation.update();
+              swiper.navigation.destroy();
+              swiper.navigation.init();
+              swiper.navigation.update();
             });
           }}
           cent
