@@ -40,7 +40,7 @@ const BlogDetailsLight = () => {
           <div className="row justify-content-center">
             <div className="col-md-4 order-2 order-md-1">
               <div className="mb-10">
-                <img src="/final/case4.jpeg" alt="" />
+                <img src="/final/case4.JPG" alt="" />
               </div>
             </div>
             <div className="col-lg-8 order-1 order-md-2">

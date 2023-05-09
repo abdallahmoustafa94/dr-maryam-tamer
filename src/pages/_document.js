@@ -18,11 +18,11 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="keywords"
-            content="HTML5 Template Vie onepage themeforest"
+            content="Looking for a skilled and experienced dentist in your area? Consider visiting Dr. Maryam Tamer! With years of experience in the field, Dr. Maryam Tamer is dedicated to providing top-notch dental care to patients of all ages. From routine cleanings to complex procedures, she has the expertise to help you achieve a healthy, beautiful smile. Book an appointment with Dr. Maryam Tamer today and experience the highest level of dental care available."
           />
           <meta
             name="description"
-            content="Vie - Onepage Multi-Purpose HTML5 Template"
+            content="Looking for a skilled and experienced dentist in your area? Consider visiting Dr. Maryam Tamer! With years of experience in the field, Dr. Tamer is dedicated to providing top-notch dental care to patients of all ages. From routine cleanings to complex procedures, she has the expertise to help you achieve a healthy, beautiful smile. Book an appointment with Dr. Maryam Tamer today and experience the highest level of dental care available."
           />
           <meta name="author" content="" />
           <link rel="shortcut icon" href="/img/favicon.ico" />
