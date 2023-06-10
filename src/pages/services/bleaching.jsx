@@ -36,13 +36,11 @@ const About = () => {
       <section className="intro-section py-5 pb-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4">
-              <div className="wow imago valign " data-wow-delay=".3s">
-                <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: isMobile ? '100%' : '90%' }} autoPlay loop muted>
-                  <source src={"/final/bleaching.mp4"} type="video/mp4" />
-                </video>
-              </div>
-            </div>
+          <div className="col-lg-4">
+                  <div className="wow imago valign " data-wow-delay=".3s">
+                    <img src="/final/bleaching.jpg" alt="" />
+                  </div>
+          </div>
 
             <div className="col-lg-8  col-md-8 valign" >
               <div className="text">

@@ -8,11 +8,16 @@ import LightTheme from '../../layouts/Light'
 
 import Split from "../../components/Split";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import Carousel from 'react-bootstrap/Carousel';
+
 
 const About = () => {
  const navbarRef = React.useRef(null);
  const logoRef = React.useRef(null);
  const isMobile = useMediaQuery('(max-width: 768px)');
+
+
+
  React.useEffect(() => {
    var navbar = navbarRef.current,
      logo = logoRef.current;
@@ -37,9 +42,32 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
-                  <div className="wow imago valign " data-wow-delay=".3s">
-                    <img src="/final/case3.jpeg" alt="" style={{width:isMobile ? "100%" : "90%"}}/>
-                  </div>
+                  {/* <div className="wow imago valign " data-wow-delay=".3s">
+                    <img src="/final/case3.jpg" alt="" style={{width:isMobile ? "100%" : "90%"}}/>
+                  </div> */}
+
+<Carousel slide={false}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="/final/case3.jpg"
+          alt="First slide"
+        />
+      
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="/final/case3-2.jpg"
+          alt="Second slide"
+        />
+
+     
+      </Carousel.Item>
+   
+    </Carousel>
+  
+
           </div>
                
                 <div className="col-lg-8  col-md-8 valign" >

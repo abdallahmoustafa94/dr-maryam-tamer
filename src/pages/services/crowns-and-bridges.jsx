@@ -37,7 +37,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4">
                   <div className="wow imago valign " data-wow-delay=".3s">
-                    <img src="/final/case1.jpeg" alt="" />
+                    <img src="/final/Crowns.JPG" alt="" />
                   </div>
           </div>
                

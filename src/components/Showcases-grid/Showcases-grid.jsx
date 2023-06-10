@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/mousewheel";
 import tooltipEffect from "../../common/tooltipEffect";
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 
 SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
@@ -24,6 +25,8 @@ export default () => {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   const paginationRef = React.useRef(null);
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   return (
     <div className="container">
       <header className='slider'>
@@ -66,7 +69,7 @@ export default () => {
 
             <div >
               <a className="">
-                <img src="/final/case1.JPG" alt="image" />
+                <img src="/final/case1.JPG" alt="image" style={{width: !isMobile && '65%'}}/>
                 {/* <div className="item-img-overlay"></div> */}
               </a>
             </div>
@@ -88,7 +91,7 @@ export default () => {
 
               <div >
                 <a className="">
-                  <img src="/final/case2.jpg" alt="image" />
+                  <img src="/final/case2.jpg" alt="image" style={{width: !isMobile && '65%'}}/>
                   {/* <div className="item-img-overlay"></div> */}
                 </a>
               </div>
@@ -110,7 +113,7 @@ export default () => {
 
               <div >
                 <a className="">
-                  <img src="/final/case3.JPG" alt="image" />
+                  <img src="/final/case3.JPG" alt="image" style={{width: !isMobile && '65%'}}/>
                   {/* <div className="item-img-overlay"></div> */}
                 </a>
               </div>
@@ -132,7 +135,7 @@ export default () => {
 
               <div >
                 <a className="">
-                  <img src="/final/case4.JPG" alt="image" />
+                  <img src="/final/case4.JPG" alt="image" style={{width: !isMobile && '65%'}}/>
                   {/* <div className="item-img-overlay"></div> */}
                 </a>
               </div>

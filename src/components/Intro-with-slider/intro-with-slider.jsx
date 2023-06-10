@@ -127,7 +127,7 @@ const IntroWithSlider = ({ sliderRef }) => {
                 {isMobile && (
 
                   <video id="my-video" data-overlay-dark="6" className="bg-img valign hero-video" style={{ height: '100vh' }} playsInline preload="auto" autoPlay loop muted>
-                    <source src={"/final/video-2.mp4"} type="video/mp4" />
+                    <source src={"/final/case1video.mp4"} type="video/mp4" />
                   </video>
                 )}
                 <div className="container">

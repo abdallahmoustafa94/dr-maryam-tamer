@@ -28,8 +28,8 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="col-lg-6 order-1 order-md-2 img">
-            <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '50vh', margin: 'auto' }} autoPlay loop muted>
-              <source src={"/final/video-home.mp4"} type="video/mp4" />
+            <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '70vh', margin: 'auto' }} autoPlay loop muted>
+              <source src={"/final/case3video.mp4"} type="video/mp4" />
             </video>
 
           </div>
