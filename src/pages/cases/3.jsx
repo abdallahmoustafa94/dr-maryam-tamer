@@ -47,7 +47,7 @@ const BlogDetailsLight = () => {
             </div>
             <div className="col-lg-8 order-1 order-md-2">
               <div className="post">
-                <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '50vh', margin: 'auto' }} autoPlay loop muted>
+                <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '50vh', margin: 'auto' }} autoPlay loop muted playsinline>
                   <source src={"/final/case3video.mp4"} type="video/mp4" />
                 </video>
                 <div className="content">

@@ -17,7 +17,7 @@ const MinimalArea = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '50vh', margin: 'auto' }} autoPlay loop muted>
+            <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '50vh', margin: 'auto' }} autoPlay loop muted playsinline>
               <source src={"/final/video-about.mp4"} type="video/mp4" />
             </video>
           </div>
