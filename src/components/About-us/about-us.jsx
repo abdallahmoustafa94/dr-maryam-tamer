@@ -3,9 +3,10 @@ import React from "react";
 import Link from "next/link";
 import AboutUs1Date from "../../data/sections/about-us1.json";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import ReactPlayer from "react-player";
 
 const AboutUs = () => {
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isDesktop = useMediaQuery('(min-width: 769px)');
 
   return (
     <section className="about-us section-padding pb-0" style={{ paddingBottom: '0' }}>
@@ -28,9 +29,16 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="col-lg-6 order-1 order-md-2 img">
-            <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '70vh', margin: 'auto' }} autoPlay loop muted playsinline>
-              <source src={"/final/case3video.mp4"} type="video/mp4" />
-            </video>
+          <ReactPlayer
+      url={"/final/case3video.mp4"}
+      playing
+      loop
+      muted
+      playsinline
+      width="100%"
+      height={isDesktop && '70vh'}
+      style={{ margin: 'auto' }}
+    />
 
           </div>
         </div>

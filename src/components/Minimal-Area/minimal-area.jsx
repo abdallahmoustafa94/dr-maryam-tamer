@@ -3,9 +3,10 @@ import React from "react";
 import cardMouseEffect from "../../common/cardMouseEffect";
 import { thumparallaxDown } from "../../common/thumparallax";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import ReactPlayer from "react-player";
 
 const MinimalArea = () => {
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isDesktop = useMediaQuery('(min-width: 769px)');
   React.useEffect(() => {
     cardMouseEffect(document.querySelectorAll(".feat .items"));
     setTimeout(() => {
@@ -17,9 +18,16 @@ const MinimalArea = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <video data-overlay-dark="6" className="bg-img valign hero-video" style={{ width: '100%', height: !isMobile && '50vh', margin: 'auto' }} autoPlay loop muted playsinline>
-              <source src={"/final/video-about.mp4"} type="video/mp4" />
-            </video>
+          <ReactPlayer
+      url={"/final/video-about.mp4"}
+      playing
+      loop
+      muted
+      playsinline
+      width="100%"
+      height={isDesktop && '50vh'}
+      style={{ margin: 'auto' }}
+    />
           </div>
           <div className="col-lg-6 valign">
             <div className="content pt-0">

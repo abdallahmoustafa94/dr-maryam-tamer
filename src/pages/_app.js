@@ -18,10 +18,7 @@ function MyApp({ Component, pageProps }) {
       new WOW().init();
     };
 
-    let video = document.querySelector('video'); // Change the selector to match your video element
-    video.addEventListener('webkitbeginfullscreen', function(e) {
-      e.preventDefault();
-    });
+   
 
     return () => {
       document.body.removeChild(script);
