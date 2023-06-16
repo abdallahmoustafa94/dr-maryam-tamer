@@ -22,7 +22,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 <img ref={lr} src="/final/logo.png" alt="logo" />
               )
             ) : (
-              <img ref={lr} src="/final/logo.png" alt="logo" style={{width:'70px'}}/>
+              <img ref={lr} src="/final/logo.png" alt="logo" style={{width:'50px'}}/>
             )}
           </a>
         </Link>
