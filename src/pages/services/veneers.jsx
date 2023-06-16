@@ -51,7 +51,7 @@ const About = () => {
         <img
           className="d-block w-100"
           src="/final/case3.jpg"
-          alt="First slide"
+          alt=""
         />
       
       </Carousel.Item>
@@ -59,7 +59,7 @@ const About = () => {
         <img
           className="d-block w-100"
           src="/final/case3-2.jpg"
-          alt="Second slide"
+          alt=""
         />
 
      
