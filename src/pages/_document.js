@@ -25,7 +25,7 @@ class MyDocument extends Document {
             content="Looking for a skilled and experienced dentist in your area? Consider visiting Dr. Maryam Tamer! With years of experience in the field, Dr. Tamer is dedicated to providing top-notch dental care to patients of all ages. From routine cleanings to complex procedures, she has the expertise to help you achieve a healthy, beautiful smile. Book an appointment with Dr. Maryam Tamer today and experience the highest level of dental care available."
           />
           <meta name="author" content="" />
-          <link rel="shortcut icon" href="/img/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
             rel="stylesheet"
