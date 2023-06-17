@@ -18,7 +18,7 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="keywords"
-            content="Looking for a skilled and experienced dentist in your area? Consider visiting Dr. Maryam Tamer! With years of experience in the field, Dr. Maryam Tamer is dedicated to providing top-notch dental care to patients of all ages. From routine cleanings to complex procedures, she has the expertise to help you achieve a healthy, beautiful smile. Book an appointment with Dr. Maryam Tamer today and experience the highest level of dental care available."
+            content="dentist, dental clinic, dental services, oral health, City, State,veners, holywood smile, Dr. Maryam Tamer, دكتورة مريم ، دكتورة مريم تامر ، دكتور اسنان ، دكتور ، فينيرز ، طب اسنان ، دكتور اسنان في القاهرة ، خدمات طب الاسنان ، ابتسامة هوليوود ، طبيب اسنان ، عيادة اسنان ، مركز اسنان"
           />
           <meta
             name="description"
