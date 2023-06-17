@@ -43,6 +43,7 @@ class MyDocument extends Document {
               })(window,document,'script','dataLayer','GTM-THZXR2W');`,
             }}
           />
+          <meta name="google-site-verification" content="KVBmKEI1uEVRySQHHK8Rtsw-Vl0qjA_TApidKSiN0d4" />
         </Head>
 
         <body>
