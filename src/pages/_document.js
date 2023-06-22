@@ -16,15 +16,13 @@ class MyDocument extends Document {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="keywords"
-            content="dentist, dental clinic, dental services, oral health, City, State,veners, holywood smile, Dr. Maryam Tamer, دكتورة مريم ، دكتورة مريم تامر ، دكتور اسنان ، دكتور ، فينيرز ، طب اسنان ، دكتور اسنان في القاهرة ، خدمات طب الاسنان ، ابتسامة هوليوود ، طبيب اسنان ، عيادة اسنان ، مركز اسنان"
-          />
+          <meta name="keywords" content="dentist, dental care, oral health, family dentistry, preventive dentistry, restorative dentistry, cosmetic dentistry, dental implants, teeth whitening, dental examinations, dental treatments, oral hygiene, dental clinic, smile makeover, pediatric dentistry, dental services, veneers, Hollywood smile, Dr. Maryam Tamer" />
+
           <meta
             name="description"
-            content="Looking for a skilled and experienced dentist in your area? Consider visiting Dr. Maryam Tamer! With years of experience in the field, Dr. Tamer is dedicated to providing top-notch dental care to patients of all ages. From routine cleanings to complex procedures, she has the expertise to help you achieve a healthy, beautiful smile. Book an appointment with Dr. Maryam Tamer today and experience the highest level of dental care available."
+            content="Dr. Maryam Tamer, experienced dentist dedicated to your oral health. Providing comprehensive dental care, from routine check-ups to advanced treatments. Achieve a bright, healthy smile with our personalized care. Book an appointment today!"
           />
-          <meta property="og:title" content="Dr.Maryam Tamer" />
+          <meta property="og:title" content="Dr. Maryam Tamer | Expert Dentist | Comprehensive Dental Care" />
 <meta property="og:type" content="Dentist.Medical" />
 <meta property="og:url" content="https://www.drmaryamtamer.com" /> 
           <meta property="og:image" content="https://i.ibb.co/Km8LFr0/case3.jpg" />
