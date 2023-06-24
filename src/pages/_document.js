@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { NextSeo, NextSeoJsonLd } from 'next-seo';
 
 
 class MyDocument extends Document {
@@ -26,20 +25,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Dr. Maryam Tamer | Expert Dentist | Comprehensive Dental Care" />
 <meta property="og:type" content="Dentist.Medical" />
 <meta property="og:url" content="https://www.drmaryamtamer.com" /> 
-          <NextSeo
-      title="Dr. Maryam Tamer | Expert Dentist | Comprehensive Dental Care"
-      description="Dr. Maryam Tamer, experienced dentist dedicated to your oral health. Providing comprehensive dental care, from routine check-ups to advanced treatments. Achieve a bright, healthy smile with our personalized care. Book an appointment today!"
-      openGraph={{
-        images: [
-          {
-            url: 'https://i.ibb.co/Km8LFr0/case3.jpg',
-            width: 800,
-            height: 600,
-            alt: 'My Image',
-          },
-        ],
-      }}
-    />
+       
   
 
           <meta name="author" content="" />
