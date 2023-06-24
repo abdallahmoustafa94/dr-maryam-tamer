@@ -26,7 +26,7 @@ class MyDocument extends Document {
 <meta property="og:type" content="Dentist.Medical" />
 <meta property="og:url" content="https://www.drmaryamtamer.com" /> 
 <meta property="og:image" content="/schema-image.JPG" />
-  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:type" content="image/JPG" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
