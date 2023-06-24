@@ -25,8 +25,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Dr. Maryam Tamer | Expert Dentist | Comprehensive Dental Care" />
 <meta property="og:type" content="Dentist.Medical" />
 <meta property="og:url" content="https://www.drmaryamtamer.com" /> 
-       
-  
+          <meta property="og:image" content="https://i.ibb.co/Km8LFr0/case3.jpg" />
 
           <meta name="author" content="" />
           <link rel="shortcut icon" href="/favicon.ico" />

@@ -5,8 +5,6 @@ import Cursor from "../components/cursor";
 import ScrollToTop from "../components/scrollToTop";
 import LoadingScreen from "../components/Loading-Screen";
 import "../styles/main.scss";
-import { NextSeo, NextSeoJsonLd } from 'next-seo';
-
 
 function MyApp({ Component, pageProps }) {
 
@@ -33,20 +31,6 @@ function MyApp({ Component, pageProps }) {
         <title>Dr.Maryam Tamer</title>
         <link rel="icon" href="/final/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <NextSeo
-      title="Dr. Maryam Tamer | Expert Dentist | Comprehensive Dental Care"
-      description="Dr. Maryam Tamer, experienced dentist dedicated to your oral health. Providing comprehensive dental care, from routine check-ups to advanced treatments. Achieve a bright, healthy smile with our personalized care. Book an appointment today!"
-      openGraph={{
-        images: [
-          {
-            url: 'https://i.ibb.co/Km8LFr0/case3.jpg',
-            width: 800,
-            height: 600,
-            alt: 'My Image',
-          },
-        ],
-      }}
-    />
 
       </Head>
       <Cursor />
