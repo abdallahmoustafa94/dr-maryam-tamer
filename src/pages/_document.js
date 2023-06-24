@@ -40,16 +40,7 @@ class MyDocument extends Document {
         ],
       }}
     />
-    <NextSeoJsonLd
-      images={[
-        {
-          url: 'https://i.ibb.co/Km8LFr0/case3.jpg',
-          width: 800,
-          height: 600,
-          alt: 'My Image',
-        },
-      ]}
-    />
+  
 
           <meta name="author" content="" />
           <link rel="shortcut icon" href="/favicon.ico" />
