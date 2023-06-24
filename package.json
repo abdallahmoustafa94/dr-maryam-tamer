@@ -12,6 +12,7 @@
     "formik": "^2.2.9",
     "intersection-observer": "^0.12.2",
     "next": "12.0.4",
+    "next-seo": "^6.1.0",
     "react": "17.0.2",
     "react-bootstrap": "^2.7.4",
     "react-circular-progressbar": "^2.0.4",
