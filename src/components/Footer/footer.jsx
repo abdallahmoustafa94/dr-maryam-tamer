@@ -18,7 +18,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
                     <h6> Address</h6>
-                    <p>9 Omarat Al Saudeya, Masaken Al Mohandesin, Nasr City, Cairo Governorate 4451701</p>
+                    <p>Clinic Number 515 in Medical Center 3, Abou Dawoud Al Zaheri street,Nasr city</p>
                   </div>
                 </li>
                 <li>
@@ -32,7 +32,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Phone</h6>
-                    <a href="tel:201024188478"> <p>01024188478</p></a>
+                    <a href="tel:201095125220"> <p>01095125220</p></a>
                   </div>
                 </li>
               </ul>

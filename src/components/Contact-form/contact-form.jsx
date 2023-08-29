@@ -33,14 +33,14 @@ const ContactForm = () => {
                 <h5>
                   <a href="#0">info@drmaryamtamer.com</a>
                 </h5>
-                <a href="tel:201024188478"> <h5>01024188478</h5></a>
+                <a href="tel:201095125220"> <h5>01095125220</h5></a>
               </div>
               <h3 className="wow" data-splitting>
                 Visit Us.
               </h3>
               <div className="item">
                 <h6>
-                  9 Omarat Al Saudeya, Masaken Al Mohandesin, Nasr City, Cairo Governorate 4451701
+                 Clinic Number 515 in Medical Center 3, Abou Dawoud Al Zaheri street,Nasr city
 
                 </h6>
               </div>
