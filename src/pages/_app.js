@@ -3,10 +3,14 @@ import Head from "next/head";
 import Script from "next/script";
 import Cursor from "../components/cursor";
 import ScrollToTop from "../components/scrollToTop";
-import LoadingScreen from "../components/Loading-Screen";
+import { appWithTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
+
 import "../styles/main.scss";
 
 function MyApp({ Component, pageProps }) {
+
+  const router = useRouter()
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -18,13 +22,14 @@ function MyApp({ Component, pageProps }) {
       new WOW().init();
     };
 
-   
-
     return () => {
       document.body.removeChild(script);
     };
   }, []);
 
+
+
+  
   return (
     <>
       <Head>
@@ -54,4 +59,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);
