@@ -3,8 +3,12 @@ import React from "react";
 import Link from "next/link";
 import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = ({ lr, nr, theme }) => {
+  const { t } = useTranslation('common');
+  console.log(t('home')); 
   return (
     <nav
       ref={nr}
@@ -46,7 +50,7 @@ const Navbar = ({ lr, nr, theme }) => {
           <ul className="navbar-nav ml-auto">
           <li className="nav-item">
               <Link href={`/`}>
-                <a className="nav-link">Home</a>
+                <a className="nav-link">{t('menu.home')}</a>
               </Link>
           </li>
           <li className="nav-item">
@@ -105,4 +109,15 @@ const Navbar = ({ lr, nr, theme }) => {
   );
 };
 
+export async function getStaticProps(context) {
+  // extract the locale identifier from the URL
+  const { locale } = context
+
+  return {
+    props: {
+      // pass the translation props to the page component
+      ...(await serverSideTranslations(locale)),
+    },
+  }
+}
 export default Navbar;

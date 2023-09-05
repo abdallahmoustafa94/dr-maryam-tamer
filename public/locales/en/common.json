@@ -1,0 +1,70 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "services": "services",
+    "cases": "cases",
+    "contact": "contact"
+  },
+  "home": {
+    "sliderOne": "Beyond Dentistry, Above Expectations!",
+    "sliderTwo": "The perfect smile is just a visit away",
+    "servicesSlogan": "DISCOVER THE ART OF DENTISTRY WITH OUR",
+    "casesSlogan": "UNMATCHED SMILE ENHANCEMENTS! ",
+    "casesTitle": "Seeing is Believing. Here Are Some Cases. "
+  },
+  "about": {
+    "about": "ABOUT",
+    "aboutDesc": "Dr. Maryam Tamer is a trusted and experienced dentist who is passionate about helping patients achieve optimal oral health. With a friendly and caring demeanor, Dr.Maryam Tamer provides personalized dental care to patients of all ages. Her comprehensive approach to dentistry includes preventive, restorative, and cosmetic treatments, tailored to meet each patient's unique needs. Dr.Maryam Tamer's commitment to excellence and patient satisfaction makes her a highly respected professional in the field of dentistry.",
+    "missionSlogan": "Empowering Your Smile, Enriching Your Life: Learn About the Passion for Dentistry and the Patient-Centric Approach.",
+    "missionTitle": "Mission",
+    "missionDesc": "Providing exceptional dental care in a warm and welcoming environment.",
+    "visionTitle": "Vision",
+    "visionDesc": "Becoming a trusted leader in dental care, known for innovative solutions and outstanding patient experience.",
+    "goalsTitle": "Goals",
+    "goalsDesc": "Comprehensive care, lasting relationships, patient satisfaction, preventive focus, and continuous innovation."
+  },
+  "contact": {
+    "contactUs": "Contact Us",
+    "address": "Address",
+    "addressDesc": "Clinic Number 515 in Medical Center 3, Abou Dawoud Al Zaheri street,Nasr city",
+    "email": "Email",
+    "phone": "Phone",
+    "contactInfo": "Contact Info.",
+    "letsTalk": "Let's Talk.",
+    "visitUs": "Visit Us."
+  },
+  "services": {
+    "compositeTitle": "Composite Restoration",
+    "rootCanalTitle": "Root Canal Treatment",
+    "veneersTitle": "Veneers",
+    "extractionTitle": "Extraction",
+    "bleachingTitle": "Bleaching",
+    "crownsTitle": "Crowns And Bridges",
+    "compositeShortDesc": "Natural-Looking Smile Repair. Minimally invasive, tooth-colored composite resin repairs cavities, chips, breaks, and gaps for a restored and aesthetically pleasing smile.",
+    "compositeLongDesc": "Composite restoration, also known as tooth-colored filling, is a modern dental procedure used to restore decayed or damaged teeth with a natural-looking and durable material. It involves the use of a tooth-colored composite resin that is carefully matched to the color of the patient's natural teeth, making it virtually indistinguishable from the surrounding tooth structure. Composite restoration is a conservative and minimally invasive approach, as it requires the removal of only the decayed or damaged portion of the tooth, preserving the remaining healthy tooth structure. The composite resin is then applied in layers, sculpted to the desired shape, and bonded to the tooth using a special curing light. The result is a seamless and aesthetically pleasing restoration that blends seamlessly with the natural teeth, restoring both the form and function of the tooth. Composite restorations are not only durable and long-lasting but also biocompatible and free of harmful metals, making them a popular choice for achieving a beautiful and healthy smile.",
+    "rootCanalShortDesc": "Saving Teeth, Relieving Pain. Preserve your smile with this common dental procedure that treats infected or decayed teeth, offering effective and comfortable endodontic therapy.",
+    "rootCanalLongDesc": "Root canal treatment, also known as endodontic therapy, is a specialized dental procedure designed to save a severely infected or damaged tooth. It involves removing the infected pulp from the tooth's inner chamber, known as the root canal, followed by cleaning, shaping, and sealing of the canal to prevent further infection. Root canal treatment is typically performed under local anesthesia to ensure patient comfort. Once the infected pulp is removed and the canal is thoroughly cleaned, a biocompatible material is used to seal the canal, preventing bacteria from re-entering the tooth. A dental crown or filling is then placed on top of the treated tooth to restore its strength, function, and appearance. Root canal treatment is a highly effective way to save a tooth that would otherwise require extraction, allowing patients to retain their natural teeth and avoid the need for more extensive dental procedures. With advancements in modern dentistry, root canal treatment can be completed with minimal discomfort, and the restored tooth can last for many years with proper care, helping patients maintain a healthy and functional smile.",
+    "veneersShortDesc": "Smile Transformations. Custom-made shells for stunning results. Enhance your smile with thin covers that mask imperfections and create a beautiful, natural-looking appearance.",
+    "veneersLongDesc": "Veneers are a popular cosmetic dental treatment that can transform the appearance of teeth by improving their color, shape, size, and alignment. Veneers are thin, custom-made shells typically made of porcelain or composite resin that are bonded to the front surface of the teeth. They are designed to look like natural teeth and can create a dramatically enhanced and aesthetically pleasing smile. The process of getting veneers typically involves a consultation with a cosmetic dentist to discuss the desired outcome and determine the most appropriate treatment plan. During the procedure, a small amount of enamel is removed from the front surface of the teeth to create space for the veneers. Then, precise impressions of the teeth are taken to fabricate the custom veneers in a dental lab. Once the veneers are ready, they are carefully bonded to the teeth using a strong adhesive. The dentist will ensure that the veneers fit perfectly and look natural, making any necessary adjustments to achieve the desired results. Veneers are known for their durability and resistance to staining, making them a long-lasting cosmetic solution for improving the appearance of teeth. They can correct a variety of cosmetic concerns, such as discoloration, chips, cracks, gaps, and misalignment, resulting in a stunning and flawless smile. With proper oral hygiene and regular dental check-ups, veneers can provide patients with a radiant and confident smile for many years to come.",
+    "extractionShortDesc": "Problem Teeth Removed. Resolve dental issues with this common procedure that removes problematic teeth, alleviating pain and improving oral health for a brighter smile.",
+    "extractionLongDesc": "Tooth extraction, also known as dental extraction, is a dental procedure that involves the removal of a tooth from its socket in the jawbone. This may be necessary for various reasons, such as severe tooth decay, advanced gum disease, trauma, overcrowding, or orthodontic purposes. The process of tooth extraction typically begins with a thorough examination and evaluation by a dentist or oral surgeon. The patient may be given local anesthesia or sedation to ensure comfort during the procedure. The tooth is carefully loosened and then gently removed using specialized dental instruments. In some cases, the tooth may need to be sectioned or extracted in pieces for more complex extractions. Following the extraction, the dentist may provide instructions for post-operative care, including pain management, oral hygiene, and dietary restrictions. Proper aftercare is crucial to promote healing and prevent complications. While tooth extraction may seem intimidating, modern dental techniques and technology have made the procedure relatively quick and comfortable. Dentists prioritize conservative approaches and strive to save natural teeth whenever possible. However, in cases where tooth extraction is necessary, it can help alleviate pain, prevent further dental issues, and create a healthier foundation for future dental treatments, such as dental implants or dentures. If you require a tooth extraction, it's important to consult with a qualified dentist or oral surgeon to discuss the best treatment plan and ensure a safe and successful extraction procedure.",
+    "bleachingShortDesc": "Enhance Your Smile. Safe, effective tooth whitening for a brighter appearance. Boost confidence with radiant results, improving dental aesthetics and smile.",
+    "crownsShortDesc": "Restore Your Smile. Customized solutions for missing or damaged teeth. Enhance dental aesthetics and functionality with safe, effective crowns and bridges"
+  },
+  "cases": {
+    "caseOneTitle": "A Complete Zirconium Makeover for Upper and Lower Arches!",
+    "caseOneDesc": "A smile makeover done by replacing an old bridge with a new 3-unit zirconium bridge combined with 5 zirconium crowns in the upper arch, in addition to 10 zirconium crowns in the lower arch.",
+    "caseTwoTitle": "Stunning Zirconium Crowns and Bridge Makeover!",
+    "caseTwoDesc": "A smile makeover was performed by replacing an old bridge with a new 3-unit zirconium bridge combined with 5 zirconium crowns in the upper arch, in addition to 10 zirconium crowns in the lower arch.",
+    "caseThreeTitle": "A Complete Zirconium Makeover for Upper and Lower Arches!",
+    "caseThreeDesc": "A smile makeover was accomplished by replacing an old bridge with a new 3-unit zirconium bridge, combined with 5 zirconium crowns in the upper arch, in addition to 10 zirconium crowns in the lower arch.",
+    "caseFourDesc": "Restoring Fallen Crowns with Emax Replacements to Match Natural Teeth",
+    "caseFourDesc": "The patient came with fallen old crowns that were replaced with new Emax ones matching the shade and shape of the natural teeth."
+  },
+  "common": {
+    "drMaryamTamer": "Dr. Maryam Tamer",
+    "getAnAppointment": "Get an appointment",
+    "readMore": "Read More"
+  }
+}

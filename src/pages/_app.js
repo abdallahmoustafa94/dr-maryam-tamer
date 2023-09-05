@@ -29,6 +29,18 @@ function MyApp({ Component, pageProps }) {
 
 
 
+  useEffect(() => {
+    // Check if the current locale is Arabic ('ar')
+    if (router.locale === 'ar') {
+      // Apply global RTL styles
+      document.documentElement.classList.add("rtl");
+    } else {
+      // Remove global RTL styles
+      document.documentElement.classList.remove("rtl");
+    }
+  }, [router.locale]);
+
+  console.log(router.locale)
   
   return (
     <>
@@ -58,5 +70,11 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
+
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, [], null, ['ar', 'en'])),
+  },
+})
 
 export default appWithTranslation(MyApp);

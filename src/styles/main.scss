@@ -67,7 +67,6 @@ button.nb:hover {
 #preloader {
   top: 0;
   left: 0;
-  ;
 }
 
 .pace-done #preloader {
@@ -151,7 +150,7 @@ body.hideX .pace {
   }
 
   100% {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }
 
@@ -194,12 +193,19 @@ body.hideX .pace {
 }
 
 .carousel-control-prev span.visually-hidden,
-.carousel-control-next span.visually-hidden
-{
-display: none;
+.carousel-control-next span.visually-hidden {
+  display: none;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: transparent;
 }
+
+// styles/rtl.module.css
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Add other global RTL styles as needed */
