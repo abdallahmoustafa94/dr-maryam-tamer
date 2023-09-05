@@ -33,7 +33,7 @@ const Home = () => {
         style={{ ...buttonStyle, backgroundColor: '#25d366' }}
         href="https://wa.me/201095125220"
       >
-        <FaWhatsapp   />
+        <FaWhatsapp  className="whatsapp" />
       </a>
       
       
@@ -42,7 +42,7 @@ const Home = () => {
         style={{ ...buttonStyle, backgroundColor: '#007bff',bottom:'90px' }}
         href="tel:00201095125220"
       >
-          <FiPhoneCall   />
+          <FiPhoneCall  className="call" />
       </a>    
     
 
