@@ -10,9 +10,6 @@ const Home = () => {
     <>
       <Homepage1 />
       <LanguageSwitcher />
-     
-    
-
     </>
   );
 };
