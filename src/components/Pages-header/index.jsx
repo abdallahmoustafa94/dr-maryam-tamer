@@ -7,7 +7,7 @@ const PagesHeader = ({title}) => {
     <header >
       <div
                   className="bg-img valign"
-                  style={{ backgroundImage: isMobile ? `url(/final/covermob.jpeg)` : `url(/final/cover-2.jpeg)`,height:'70vh'}}
+                  style={{ backgroundImage: isMobile ? `url(/final/sliderbgnew.avif)` : `url(/final/cover-2.jpeg)`,height:'70vh'}}
                   data-overlay-dark="6"
                 >
                  

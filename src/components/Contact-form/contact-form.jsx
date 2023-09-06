@@ -22,7 +22,8 @@ const ContactForm = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="map" id="ieatmaps">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13810.673262364526!2d31.3398875!3d30.0750406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fbb0347a73b%3A0xb23ab6a228633253!2sGlobal%20dental%20clinic!5e0!3m2!1sen!2seg!4v1681711231950!5m2!1sen!2seg" loading="lazy" ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.2221574896103!2d31.3684443!3d30.0591659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583dc25f5e8555%3A0xbd4eaa7f7e796599!2sMedical%20Center%203!5e0!3m2!1sen!2sus!4v1693971911424!5m2!1sen!2sus" loading="lazy" ></iframe>
+
             </div>
           </div>
           <div className="col-lg-5 offset-lg-1">
