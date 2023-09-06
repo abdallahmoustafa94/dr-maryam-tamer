@@ -1,9 +1,11 @@
 import React from "react";
 import ContactFromDate from "../../data/sections/form-info.json";
 import { Formik, Form, Field } from "formik";
-
+import { useTranslation } from "react-i18next";
+import i18n from "../../../config/i18n";
 const ContactForm = () => {
   const messageRef = React.useRef(null);
+  const {t} = useTranslation()
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -24,11 +26,9 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="col-lg-5 offset-lg-1">
-            <div className="cont-info">
-              <h4 className="fw-700  mb-50">Contact Info.</h4>
-              <h3 className="wow" data-splitting>
-                Let's Talk.
-              </h3>
+            <div className="cont-info" style={{textAlign:i18n.language === "ar" ? 'right' : 'left'}}>
+              <h4 className="fw-700  mb-50">{t('contact.contactInfo')}</h4>
+            
               <div className="item mb-40">
                 <h5>
                   <a href="#0">info@drmaryamtamer.com</a>
@@ -36,11 +36,11 @@ const ContactForm = () => {
                 <a href="tel:201095125220"> <h5>01095125220</h5></a>
               </div>
               <h3 className="wow" data-splitting>
-                Visit Us.
+                {t('contact.visitUs')}
               </h3>
               <div className="item">
                 <h6>
-                 Clinic Number 515 in Medical Center 3, Abou Dawoud Al Zaheri street,Nasr city
+                 {t('contact.addressDesc')}
 
                 </h6>
               </div>

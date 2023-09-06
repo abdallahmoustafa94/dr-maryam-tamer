@@ -9,9 +9,13 @@ import CallToAction from "../../components/Call-to-action/call-to-action";
 import PagesHeader from "../../components/Pages-header";
 import Split from "../../components/Split";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import { useTranslation } from "react-i18next";
+import i18n from "../../../config/i18n";
 const BlogDetailsLight = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
+  const {t} = useTranslation()
+
   const isMobile = useMediaQuery('(max-width: 768px)');
   React.useEffect(() => {
     var navbar = navbarRef.current,
@@ -33,7 +37,7 @@ const BlogDetailsLight = () => {
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <PagesHeader
-        title="Restoring Fallen Crowns with Emax Replacements to Match Natural Teeth"
+        title={t('cases.caseFourTitle')}
       />
       <section className="blog-pg single section-padding " style={{ paddingTop: '100px' }}>
         <div className="container">
@@ -52,15 +56,13 @@ const BlogDetailsLight = () => {
                   <div className="row justify-content-center">
                     <div className="col-lg-10">
                       <div className="text">
-                        <Split>
                           <p
                             className="wow txt mb-10 words chars splitting"
-                            data-splitting
+                            style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}
                           >
-                            Patient came with fallen old crowns that was replaced with new Emax ones matching the shade and shape of the natural teeth
+                          {t('cases.caseFourDesc')}
                           </p>
 
-                        </Split>
                       </div>
 
                     </div>

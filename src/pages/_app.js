@@ -3,10 +3,10 @@ import Head from "next/head";
 import Script from "next/script";
 import Cursor from "../components/cursor";
 import ScrollToTop from "../components/scrollToTop";
-import { appWithTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 
 import "../styles/main.scss";
+import i18n from "../../config/i18n";
 
 function MyApp({ Component, pageProps }) {
 
@@ -29,12 +29,36 @@ function MyApp({ Component, pageProps }) {
 
 
 
+  useEffect(() => {
+    // Check if the current locale is Arabic ('ar')
+    if (i18n.language === 'ar') {
+      // Apply global RTL styles
+      console.log('Adding RTL class');
+      document.documentElement.classList.add("rtl");
+  
+      // Add custom font-family for Cairo font
+      document.documentElement.style.setProperty("font-family", "'Cairo', sans-serif");
+    } else {
+      // Remove global RTL styles
+      console.log('Removing RTL class');
+      document.documentElement.classList.remove("rtl");
+  
+      // Reset font-family to the default value for LTR text
+      document.documentElement.style.removeProperty("font-family");
+    }
+  }, [i18n.language]);
+
+  console.log(router.locale)
   
   return (
     <>
       <Head>
         <title>Dr.Maryam Tamer</title>
         <link rel="icon" href="/final/logo.png" />
+        <link
+  href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       </Head>
@@ -59,4 +83,6 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default appWithTranslation(MyApp);
+
+
+export default MyApp

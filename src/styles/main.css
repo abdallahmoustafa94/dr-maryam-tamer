@@ -194,4 +194,11 @@ body.hideX .pace {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: transparent;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Add other global RTL styles as needed *//*# sourceMappingURL=main.css.map */

@@ -11,10 +11,12 @@ import AboutIntro from "../../components/About-intro";
 import LightTheme from '../../layouts/Light'
 import Team from "../../components/Team/team";
 import MinimalArea from "../../components/Minimal-Area/minimal-area";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
+  const {t} = useTranslation()
 
   React.useEffect(() => {
     var navbar = navbarRef.current,
@@ -35,7 +37,7 @@ const About = () => {
   return (
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <PagesHeader title="Unleash your smile's potential" />
+      <PagesHeader title={t('home.sliderTwo')} />
       <AboutIntro />
       <MinimalArea />
       <CallToAction />

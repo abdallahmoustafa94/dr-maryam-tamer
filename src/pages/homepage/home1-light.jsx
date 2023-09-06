@@ -16,12 +16,13 @@ import LightTheme from "../../layouts/Light";
 import Cases from "../../components/cases";
 import Portfolio from "../../components/Portfolio/portfolio";
 import ShowcasesGrid from "../../components/Showcases-grid/Showcases-grid";
+import { useTranslation } from "react-i18next";
 const Homepage1 = () => {
   const fixedSlider = React.useRef(null);
   const MainContent = React.useRef(null);
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
-
+const {t} = useTranslation()
   React.useEffect(() => {
     setInterval(() => {
       if (fixedSlider.current) {
@@ -60,10 +61,10 @@ const Homepage1 = () => {
           <div className="col-lg-8 col-md-10">
             <div className="sec-head text-center">
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-                Unmatched Smile Enhancements!
+               {t('home.casesSlogan')}
               </h6>
               <h3 className="wow">
-                Seeing is Believing. <br />Here Are Some Cases.
+                {t('home.casesTitle')}
               </h3>
             </div>
           </div>

@@ -2,13 +2,15 @@
 import React from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
-
+import { useTranslation } from "react-i18next";
+import i18n from "../../../config/i18n";
 const Portfolio = ({ grid, filterPosition }) => {
   React.useEffect(() => {
     setTimeout(() => {
       initIsotope();
     }, 1000);
   }, []);
+  const {t} = useTranslation()
   return (
     <section className="portfolio ">
       <div className="container">
@@ -35,13 +37,13 @@ const Portfolio = ({ grid, filterPosition }) => {
                 </a>
               </div>
               <div className="cont">
-                <h6 className="text-left">A Complete Zirconium Makeover for Upper and Lower Arches!</h6>
+                <h6   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}> {t('cases.caseOneTitle')}</h6>
 
               </div>
-              <div className="btn-more">
+              <div className="btn-more"   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}>
                 <Link href="/cases/1">
                   <a className="simple-btn mt-3">
-                    Read More
+                  {t('common.readMore')}
                   </a>
                 </Link>
               </div>
@@ -63,13 +65,13 @@ const Portfolio = ({ grid, filterPosition }) => {
                 </a>
               </div>
               <div className="cont">
-                <h6 className="text-left">Stunning Zirconium Crowns and Bridge Makeover!</h6>
+                <h6   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}> {t('cases.caseTwoTitle')}</h6>
 
               </div>
-              <div className="btn-more">
+              <div className="btn-more"   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}>
                 <Link href="/cases/2">
                   <a className="simple-btn mt-3">
-                    Read More
+                  {t('common.readMore')}
                   </a>
                 </Link>
               </div>
@@ -90,13 +92,13 @@ const Portfolio = ({ grid, filterPosition }) => {
                 </a>
               </div>
               <div className="cont">
-                <h6 className="text-left">Smile makeover done using 8 Emax porcelain veneers</h6>
+                <h6   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}>{t('cases.caseThreeTitle')}</h6>
 
               </div>
-              <div className="btn-more">
+              <div className="btn-more"   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}>
                 <Link href="/cases/3">
                   <a className="simple-btn mt-3">
-                    Read More
+                  {t('common.readMore')}
                   </a>
                 </Link>
               </div>
@@ -117,13 +119,13 @@ const Portfolio = ({ grid, filterPosition }) => {
                 </a>
               </div>
               <div className="cont">
-                <h6 className="text-left">Restoring Fallen Crowns with Emax Replacements to Match Natural Teeth</h6>
+                <h6   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}>{t('cases.caseFourTitle')}</h6>
 
               </div>
-              <div className="btn-more">
-                <Link href="/cases/4">
+              <div className="btn-more" style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}>
+                <Link href="/cases/4"   style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}>
                   <a className="simple-btn mt-3">
-                    Read More
+                  {t('common.readMore')}
                   </a>
                 </Link>
               </div>

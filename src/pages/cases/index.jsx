@@ -10,8 +10,11 @@ import PagesHeader from "../../components/Pages-header";
 import Split from "../../components/Split";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Portfolio from "../../components/Portfolio/portfolio";
+import { useTranslation } from "react-i18next";
+
 const BlogDetailsLight = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const {t} = useTranslation()
 
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
@@ -36,7 +39,7 @@ const BlogDetailsLight = () => {
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <PagesHeader
-      title="UNMATCHED SMILE ENHANCEMENTS!" />
+      title={t('home.sliderTwo')} />
          <Portfolio grid={2}  />
     <CallToAction />
           <Footer />

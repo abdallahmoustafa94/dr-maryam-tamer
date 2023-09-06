@@ -3,6 +3,7 @@ import Link from "next/link";
 import introData from "../../data/sections/intro.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useMediaQuery from '../../hooks/useMediaQuery'
+import { useTranslation } from 'react-i18next';
 
 import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
 
@@ -32,6 +33,7 @@ const IntroWithSlider = ({ sliderRef }) => {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   const paginationRef = React.useRef(null);
+  const { t } = useTranslation();
 
   const isMobile = useMediaQuery('(max-width: 768px)');
 
@@ -96,18 +98,18 @@ const IntroWithSlider = ({ sliderRef }) => {
 
               <div
                 className="bg-img valign"
-                style={{ backgroundImage: isMobile ? `url(/final/covermob.jpeg)` : `url(/final/cover-2.jpeg)` }}
+                style={{ backgroundImage: isMobile ? `url(/final/sliderbgnew.avif)` : `url(/final/cover-2.jpeg)` }}
                 data-overlay-dark="6"
               >
                 <div className="container">
                   <div className="row justify-content-center">
                     <div className="col-lg-8 col-md-10">
                       <div className="caption center mt-30">
-                        <h1 >Dr.Maryam Tamer</h1>
-                        <p style={{ fontSize: '24px' }}>Beyond Dentistry, Above Expectations!</p>
+                        <h1 >{t('common.drMaryamTamerClinic')}</h1>
+                        <p style={{ fontSize: '24px' }}>{t('home.sliderOne')}</p>
                         <Link href="/contact/">
                           <a className="butn bord curve mt-30">
-                            <span>Get an appointment</span>
+                            <span>{t('common.getAnAppointment')}</span>
                           </a>
                         </Link>
                       </div>
@@ -134,11 +136,11 @@ const IntroWithSlider = ({ sliderRef }) => {
                   <div className="row justify-content-center">
                     <div className="col-lg-8 col-md-10">
                       <div className="caption center mt-30">
-                        <h1>Dr.Maryam Tamer</h1>
-                        <p style={{ fontSize: '24px' }}>The perfect smile is just a visit away</p>
+                        <h1>{t('common.drMaryamTamerClinic')}</h1>
+                        <p style={{ fontSize: '24px' }}>{t('home.sliderTwo')}</p>
                         <Link href="/contact/">
                           <a className="butn bord curve mt-30">
-                            <span>Get an appointment</span>
+                            <span>{t('common.getAnAppointment')}</span>
                           </a>
                         </Link>
                       </div>

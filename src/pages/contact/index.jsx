@@ -6,11 +6,13 @@ import LightTheme from "../../layouts/Light";
 import ContactHeader from "../../components/Contact-header/contact-header";
 import ContactForm from "../../components/Contact-form/contact-form";
 import PagesHeader from "../../components/Pages-header";
+import { useTranslation } from "react-i18next";
+
 
 const Contact = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
-
+  const {t} = useTranslation()
   React.useEffect(() => {
     document.querySelector("body").classList.add("contact-page");
     var navbar = navbarRef.current,

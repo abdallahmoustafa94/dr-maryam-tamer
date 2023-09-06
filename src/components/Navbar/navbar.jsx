@@ -3,8 +3,12 @@ import React from "react";
 import Link from "next/link";
 import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
+import { useTranslation } from 'react-i18next';
+import i18n from "../../../config/i18n";
+
 
 const Navbar = ({ lr, nr, theme }) => {
+  const { t } = useTranslation();
   return (
     <nav
       ref={nr}
@@ -43,15 +47,15 @@ const Navbar = ({ lr, nr, theme }) => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
+          <ul className={`navbar-nav ${ i18n.language === "ar" ? "mr-auto" :  "ml-auto"}`}>
           <li className="nav-item">
               <Link href={`/`}>
-                <a className="nav-link">Home</a>
+                <a className="nav-link">{t('menu.home')}</a>
               </Link>
           </li>
           <li className="nav-item">
               <Link href={`/about`}>
-                <a className="nav-link">About</a>
+                <a className="nav-link">{t('menu.about')}</a>
               </Link>
           </li>
             <li className="nav-item dropdown" onClick={handleDropdown}>
@@ -62,32 +66,32 @@ const Navbar = ({ lr, nr, theme }) => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Services
+                {t('menu.services')}
               </span>
-              <div className="dropdown-menu">
+              <div className="dropdown-menu"  style={{textAlign: i18n.language === "ar" ? 'center' : 'center'}}>
                 <Link href={`/services/composite-restoration`}>
-                  <a className="dropdown-item">Composite Restoration</a>
+                  <a className="dropdown-item">{t('services.compositeTitle')}</a>
                 </Link>
                 <Link href={`/services/root-canal-treatment`}>
-                  <a className="dropdown-item">Root Canal treatment</a>
+                  <a className="dropdown-item">{t('services.rootCanalTitle')}</a>
                 </Link>
                 <Link href={`/services/veneers`}>
-                  <a className="dropdown-item">Veneers</a>
+                  <a className="dropdown-item">{t('services.veneersTitle')}</a>
                 </Link>
                 <Link href={`/services/extraction`}>
-                  <a className="dropdown-item">Extraction</a>
+                  <a className="dropdown-item">{t('services.extractionTitle')}</a>
                 </Link>
                 <Link href={`/services/bleaching`}>
-                  <a className="dropdown-item">Bleaching</a>
+                  <a className="dropdown-item">{t('services.bleachingTitle')}</a>
                 </Link>
                 <Link href={`/services/crowns-and-bridges`}>
-                  <a className="dropdown-item">Crowns And Bridges</a>
+                  <a className="dropdown-item">{t('services.crownsTitle')}</a>
                 </Link>
               </div>
             </li>
             <li className="nav-item">
               <Link href={`/cases`}>
-                <a className="nav-link">Cases</a>
+                <a className="nav-link">{t('menu.cases')}</a>
               </Link>
           </li>
            
@@ -95,7 +99,7 @@ const Navbar = ({ lr, nr, theme }) => {
            
             <li className="nav-item">
               <Link href={`/contact/`}>
-                <a className="nav-link">Contact</a>
+                <a className="nav-link">{t('menu.contact')}</a>
               </Link>
             </li>
           </ul>
@@ -105,4 +109,15 @@ const Navbar = ({ lr, nr, theme }) => {
   );
 };
 
+export async function getStaticProps(context) {
+  // extract the locale identifier from the URL
+  const { locale } = context
+
+  return {
+    props: {
+      // pass the translation props to the page component
+      ...(await serverSideTranslations(locale)),
+    },
+  }
+}
 export default Navbar;

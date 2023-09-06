@@ -1,8 +1,11 @@
 import React from 'react'
 import Split from '../Split'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
+import i18n from '../../../config/i18n'
 
 const CallToAction = ({img}) => {
+  const {t} = useTranslation()
     return (
       <section
         className="call-action section-padding sub-bg bg-img"
@@ -11,12 +14,12 @@ const CallToAction = ({img}) => {
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-lg-9">
-              <div className="content sm-mb30 text-center text-md-left">
+              <div className={`content sm-mb30 text-center ${i18n.language === "ar" ? 'text-md-right' :'text-md-left'}`}>
                   <h6 className="wow" style={{color:'#111'}}>
-                  Let's Discuss 
+                 {t('common.letsDiscuss')}
                   </h6>
                   <h2 className="wow">
-                  Your <br /> <span style={{color:"#000"}}>Smile Journey</span>
+                   <span style={{color:"#000"}}>{t('common.smileJourney')}</span>
                     .
                   </h2>
               </div>
@@ -30,7 +33,7 @@ const CallToAction = ({img}) => {
                   className="butn bord curve wow fadeInUp m-auto ms-md-auto"
                   data-wow-delay=".5s"
                 >
-                  <span>Get In Touch</span>
+                  <span>{t('common.getInTouch')}</span>
                 </a>
               </Link>
             </div>
