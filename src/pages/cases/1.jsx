@@ -9,8 +9,11 @@ import CallToAction from "../../components/Call-to-action/call-to-action";
 import PagesHeader from "../../components/Pages-header";
 import Split from "../../components/Split";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import { useTranslation } from "react-i18next";
+import i18n from "../../../config/i18n";
 const BlogDetailsLight = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const {t} = useTranslation()
 
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
@@ -35,7 +38,7 @@ const BlogDetailsLight = () => {
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <PagesHeader
-        title="A Complete Zirconium Makeover for Upper and Lower Arches!"
+        title={t('cases.caseOneTitle')}
       />
       <section className="blog-pg single section-padding " style={{ paddingTop: '100px' }}>
         <div className="container">
@@ -54,15 +57,13 @@ const BlogDetailsLight = () => {
                   <div className="row justify-content-center">
                     <div className="col-lg-10">
                       <div className="text">
-                        <Split>
                           <p
                             className="wow txt mb-10 words chars splitting"
-                            data-splitting
+                            style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}
                           >
-                            Smile makeover done by replacing an old bridge with new 3 unite zirconium bridge combined with 5 zirconium crowns in the upper arch in addition to 10 zirconium crowns in the lower arch
+                          {t('cases.caseOneDesc')}
                           </p>
 
-                        </Split>
                       </div>
 
                     </div>

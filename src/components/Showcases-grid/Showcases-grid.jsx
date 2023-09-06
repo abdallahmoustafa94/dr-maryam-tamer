@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 import "swiper/css/mousewheel";
 import tooltipEffect from "../../common/tooltipEffect";
 import useMediaQuery from '../../hooks/useMediaQuery';
-
+import { useTranslation } from 'react-i18next';
 
 SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 export default () => {
@@ -26,10 +26,10 @@ export default () => {
   const navigationNextRef = React.useRef(null);
   const paginationRef = React.useRef(null);
   const isMobile = useMediaQuery('(max-width: 768px)');
-
+const {t} = useTranslation()
   return (
-    <div className="container">
-      <header className='slider'>
+    <div className="container" >
+      <header className='slider' dir='ltr'>
         <Swiper
           slidesPerView={1}
           onSlideChange={() => console.log('slide change')}
@@ -74,13 +74,13 @@ export default () => {
               </a>
             </div>
             <div className="cont">
-              <h6 >A Complete Zirconium Makeover for Upper and Lower Arches!</h6>
+              <h6 >{t('cases.caseOneTitle')}</h6>
 
             </div>
             <div className="btn-more">
               <Link href="/cases/1">
                 <a className="simple-btn mt-3">
-                  Read More
+                  {t('common.readMore')}
                 </a>
               </Link>
             </div>
@@ -96,13 +96,13 @@ export default () => {
                 </a>
               </div>
               <div className="cont">
-                <h6 >Stunning Zirconium Crowns and Bridge Makeover!</h6>
+                <h6 >{t('cases.caseTwoTitle')}</h6>
 
               </div>
               <div className="btn-more">
                 <Link href="/cases/2">
                   <a className="simple-btn mt-3">
-                    Read More
+                    {t('common.readMore')}
                   </a>
                 </Link>
               </div>
@@ -118,13 +118,13 @@ export default () => {
                 </a>
               </div>
               <div className="cont">
-                <h6 >Smile makeover done using 8 Emax porcelain veneers</h6>
+                <h6 >{t('cases.caseThreeTitle')}</h6>
 
               </div>
               <div className="btn-more">
                 <Link href="/cases/3">
                   <a className="simple-btn mt-3">
-                    Read More
+                    {t('common.readMore')}
                   </a>
                 </Link>
               </div>
@@ -140,13 +140,13 @@ export default () => {
                 </a>
               </div>
               <div className="cont">
-                <h6 >Restoring Fallen Crowns with Emax Replacements to Match Natural Teeth</h6>
+                <h6 >{t('cases.caseFourTitle')}</h6>
 
               </div>
               <div className="btn-more">
                 <Link href="/cases/4">
                   <a className="simple-btn mt-3">
-                    Read More
+                    {t('common.readMore')}
                   </a>
                 </Link>
               </div>
@@ -159,7 +159,7 @@ export default () => {
             className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
           >
             <div>
-              <span>Next Slide</span>
+              <span>{t('common.next')}</span>
             </div>
             <div>
               <i className="fas fa-chevron-right"></i>
@@ -173,7 +173,7 @@ export default () => {
               <i className="fas fa-chevron-left"></i>
             </div>
             <div>
-              <span>Prev Slide</span>
+              <span>{t('common.previous')}</span>
             </div>
           </div>
 

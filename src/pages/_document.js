@@ -1,14 +1,34 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-
+import { FaWhatsapp } from 'react-icons/fa'
+import { FiPhoneCall } from 'react-icons/fi'
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps, locale: ctx?.locale || "en" };
+    return { ...initialProps, locale: ctx?.locale || "ar" };
   }
 
   render() {
     console.log(this.props.locale)
+
+    const buttonStyle = {
+      position: 'fixed',
+      bottom: '70px',
+      right: '20px',
+      padding: '15px', // Increased padding for larger buttons
+      backgroundColor: '#25d366',
+      color: 'white',
+      border: 'none',
+      borderRadius: '50%', // Rounded shape
+      cursor: 'pointer',
+      outline: 'none',
+      fontSize: '28px', // Increased font size for larger buttons
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)', // Add a subtle shadow
+      zIndex:'9999'
+    };
     return (
       <Html 
       lang={this.props.locale}>
@@ -67,7 +87,22 @@ class MyDocument extends Document {
               style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
           </noscript>
-    
+          <a
+      className="whatsapp"
+        style={{ ...buttonStyle, backgroundColor: '#25d366' }}
+        href="https://wa.me/201095125220"
+      >
+        <FaWhatsapp   className="whatsapp"/>
+      </a>
+      
+      
+      <a
+      className="call"
+        style={{ ...buttonStyle, backgroundColor: '#007bff',bottom:'150px' }}
+        href="tel:00201095125220"
+      >
+          <FiPhoneCall  className="call" />
+      </a>    
         </body>
       </Html>
     );
