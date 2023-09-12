@@ -36,13 +36,11 @@ class MyDocument extends Document {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="keywords" content="dentist, dental care, oral health, family dentistry, preventive dentistry, restorative dentistry, cosmetic dentistry, dental implants, teeth whitening, dental examinations, dental treatments, oral hygiene, dental clinic, smile makeover, pediatric dentistry, dental services, veneers, Hollywood smile, Dr. Maryam Tamer" />
+          <meta name="keywords" content="دكتور اسنان، طبيب اسنان، مركز اسنان، عيادة اسنان، دكتورة مريم تامر، افضل عيادة لطب الاسنان، دكتور اسنان قريب منى، دكتورة اسنان، علاج الاسنان، زراعة الاسنان، فينيرز، تقويم، حشو الاسنان، تجميل اسنان" />
 
-          <meta
-            name="description"
-            content="Dr. Maryam Tamer, experienced dentist dedicated to your oral health. Providing comprehensive dental care, from routine check-ups to advanced treatments. Achieve a bright, healthy smile with our personalized care. Book an appointment today!"
-          />
-          <meta property="og:title" content="Dr. Maryam Tamer | Expert Dentist | Comprehensive Dental Care" />
+          <meta name="description" content="ابحث عن أفضل خدمات طب الأسنان مع الدكتورة مريم تامر. خبرتها وتفانيها في تقديم الوقاية والعلاج الترميمي والجمالي تضمن لك صحة فم وأسنان مثالية. اعتمد على الخبرة والجودة معنا." />
+
+<meta property="og:title" content="عيادة دكتورة مريم تامر لطب الأسنان - أفضل خدمات العناية بصحة الفم والأسنان" />
 <meta property="og:type" content="Dentist.Medical" />
 <meta property="og:url" content="https://www.drmaryamtamer.com" /> 
           <meta property="og:image" content="https://i.ibb.co/Km8LFr0/case3.jpg" />
