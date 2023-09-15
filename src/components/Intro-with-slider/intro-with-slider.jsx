@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import useMediaQuery from '../../hooks/useMediaQuery'
 import { useTranslation } from 'react-i18next';
 
+
 import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
 
 import "swiper/css";

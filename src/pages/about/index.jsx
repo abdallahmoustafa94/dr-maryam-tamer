@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar/navbar";
 import Services from "../../components/Services/services";
 import VideoWithTestimonials from "../../components/Video-with-testimonials/video-with-testimonials";
@@ -17,23 +17,23 @@ const About = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
   const {t} = useTranslation()
-
   React.useEffect(() => {
     var navbar = navbarRef.current,
       logo = logoRef.current;
     if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
+      navbar?.classList.add("nav-scroll");
     } else {
-      navbar.classList.remove("nav-scroll");
+      navbar?.classList.remove("nav-scroll");
     }
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
+        navbar?.classList.add("nav-scroll");
       } else {
-        navbar.classList.remove("nav-scroll");
+        navbar?.classList.remove("nav-scroll");
       }
     });
   }, [navbarRef]);
+
   return (
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} />

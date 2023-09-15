@@ -1,12 +1,13 @@
-import React,{useEffect} from "react";
+import React,{useState, useEffect} from "react";
 import Head from "next/head";
 import Script from "next/script";
 import Cursor from "../components/cursor";
 import ScrollToTop from "../components/scrollToTop";
 import { useRouter } from 'next/router';
-
+import useMediaQuery from "../hooks/useMediaQuery";
 import "../styles/main.scss";
 import i18n from "../../config/i18n";
+import Loader from "../common/loader";
 
 function MyApp({ Component, pageProps }) {
 
@@ -49,7 +50,16 @@ function MyApp({ Component, pageProps }) {
   }, [i18n.language]);
 
   console.log(router.locale)
+
+  const windowWidth = useMediaQuery();
+  const [isLoading, setIsLoading] = useState(true)
+      useEffect(()=>{
+        if(typeof windowWidth !== 'undefined'){
+          setIsLoading(false)
+        }
+      },[windowWidth])
   
+      console.log(windowWidth)
   return (
     <>
       <Head>
@@ -64,6 +74,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Cursor />
       {/* <LoadingScreen /> */}
+      {isLoading && (
+        <Loader / >
+      )}
       <Component {...pageProps} />
       <ScrollToTop />
       {/* <Script strategy="beforeInteractive" id="wow" src="/js/wow.min.js"></Script> */}

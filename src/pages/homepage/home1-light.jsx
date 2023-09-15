@@ -36,17 +36,17 @@ const {t} = useTranslation()
     var navbar = navbarRef.current,
       logo = logoRef.current;
     if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
+      navbar?.classList.add("nav-scroll");
     } else {
-      navbar.classList.remove("nav-scroll");
+      navbar?.classList.remove("nav-scroll");
     }
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
-        logo.setAttribute("src", appData.darkLogo);
+        navbar?.classList.add("nav-scroll");
+        logo?.setAttribute("src", appData.darkLogo);
       } else {
-        navbar.classList.remove("nav-scroll");
-        logo.setAttribute("src", appData.lightLogo);
+        navbar?.classList.remove("nav-scroll");
+        logo?.setAttribute("src", appData.lightLogo);
       }
     });
   }, [fixedSlider, MainContent, navbarRef]);

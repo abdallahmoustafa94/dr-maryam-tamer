@@ -19,15 +19,15 @@ const About = () => {
     var navbar = navbarRef.current,
       logo = logoRef.current;
     if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
+      navbar?.classList.add("nav-scroll");
     } else {
-      navbar.classList.remove("nav-scroll");
+      navbar?.classList.remove("nav-scroll");
     }
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
+        navbar?.classList.add("nav-scroll");
       } else {
-        navbar.classList.remove("nav-scroll");
+        navbar?.classList.remove("nav-scroll");
       }
     });
   }, [navbarRef]);

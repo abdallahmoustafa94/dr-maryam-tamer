@@ -1,7 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import useMediaQuery from "../hooks/useMediaQuery";
 import { FaWhatsapp } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
+import { useEffect, useState } from "react";
+import Loader from "../common/loader";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -29,6 +31,8 @@ class MyDocument extends Document {
       boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)', // Add a subtle shadow
       zIndex:'9999'
     };
+
+ 
     return (
       <Html 
       lang={this.props.locale}>
@@ -75,6 +79,7 @@ class MyDocument extends Document {
         </Head>
 
         <body>
+
           <Main />
           <NextScript />
  <noscript>
@@ -85,6 +90,7 @@ class MyDocument extends Document {
               style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
           </noscript>
+  
           <a
   className="whatsapp"
   style={{ ...buttonStyle, backgroundColor: '#25d366',animation: 'pulse 2s infinite' }}
