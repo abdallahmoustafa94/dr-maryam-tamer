@@ -94,7 +94,7 @@ class MyDocument extends Document {
           <a
   className="whatsapp"
   style={{ ...buttonStyle, backgroundColor: '#25d366',animation: 'pulse 2s infinite' }}
-  href="https://wa.me/201095125220?text=Contact%20us%20now%20on%20WhatsApp"
+  href="https://wa.me/201095125220"
 >
   <FaWhatsapp className="whatsapp" style={{fontSize:'22px'}}/>
   <span className="whatsapp inline-block mr-2" >احجز الان على واتساب</span>
