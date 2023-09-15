@@ -44,8 +44,8 @@ const About = () => {
                   </div>
           </div>
 
-            <div className="col-lg-8  col-md-8 valign" >
-              <div className="text" dir="rtl" style={{textAlign:'right'}}>
+            <div className="col-lg-8  col-md-8 valign py-5" >
+              <div className="text " dir="rtl" style={{textAlign:'right'}}>
                   <p
                     className="wow txt mb-10 words chars splitting"
                     style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}

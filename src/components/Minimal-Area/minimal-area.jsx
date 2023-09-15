@@ -17,10 +17,10 @@ const MinimalArea = () => {
     }, 1000);
   }, []);
   return (
-    <section className="min-area" style={{ marginTop: '100px' }}>
+    <section className="min-area" >
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          {/* <div className="col-lg-6">
           <ReactPlayer
       url={"/final/video-about.mp4"}
       playing
@@ -31,8 +31,8 @@ const MinimalArea = () => {
       height={isDesktop && '50vh'}
       style={{ margin: 'auto' }}
     />
-          </div>
-          <div className="col-lg-6 valign">
+          </div> */}
+          <div className="col-lg-12 valign">
             <div className="content pt-0">
               <p className="wow txt mt-4 mt-md-0" data-splitting style={{textAlign : i18n.language === "ar" ? "right" : 'left'}}>
                 {t('about.missionSlogan')}

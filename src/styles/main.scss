@@ -208,4 +208,14 @@ body.hideX .pace {
   text-align: right;
 }
 
-/* Add other global RTL styles as needed */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

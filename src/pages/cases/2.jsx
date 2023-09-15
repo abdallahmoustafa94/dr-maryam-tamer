@@ -53,7 +53,7 @@ const BlogDetailsLight = () => {
                 <div className="content">
                   <div className="row justify-content-center">
                     <div className="col-lg-10">
-                      <div className="text">
+                      <div className="text py-5">
                           <p
                             className="wow txt mb-10 words chars splitting"
                             style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}

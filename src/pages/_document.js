@@ -19,10 +19,10 @@ class MyDocument extends Document {
       backgroundColor: '#25d366',
       color: 'white',
       border: 'none',
-      borderRadius: '50%', // Rounded shape
+      borderRadius: '15px', // Rounded shape
       cursor: 'pointer',
       outline: 'none',
-      fontSize: '28px', // Increased font size for larger buttons
+      fontSize: '16px', // Increased font size for larger buttons
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -86,20 +86,23 @@ class MyDocument extends Document {
             ></iframe>
           </noscript>
           <a
-      className="whatsapp"
-        style={{ ...buttonStyle, backgroundColor: '#25d366' }}
-        href="https://wa.me/201095125220"
-      >
-        <FaWhatsapp   className="whatsapp"/>
-      </a>
+  className="whatsapp"
+  style={{ ...buttonStyle, backgroundColor: '#25d366',animation: 'pulse 2s infinite' }}
+  href="https://wa.me/201095125220?text=Contact%20us%20now%20on%20WhatsApp"
+>
+  <FaWhatsapp className="whatsapp" style={{fontSize:'22px'}}/>
+  <span className="whatsapp inline-block mr-2" >احجز الان على واتساب</span>
+</a>
+
       
       
       <a
       className="call"
-        style={{ ...buttonStyle, backgroundColor: '#007bff',bottom:'150px' }}
+        style={{ ...buttonStyle, backgroundColor: '#007bff',bottom:'150px',animation: 'pulse 2s infinite' }}
         href="tel:00201095125220"
       >
-          <FiPhoneCall  className="call" />
+          <FiPhoneCall  className="call" style={{fontSize:'22px'}}/>
+          <span className="call inline-block mr-2" >اتصل بنا</span>
       </a>    
         </body>
       </Html>
