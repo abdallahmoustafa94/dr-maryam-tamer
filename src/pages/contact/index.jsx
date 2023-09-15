@@ -13,26 +13,7 @@ const Contact = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
   const {t} = useTranslation()
-  React.useEffect(() => {
-    document.querySelector("body").classList.add("contact-page");
-    var navbar = navbarRef.current,
-      logo = logoRef.current;
-    if (window.pageYOffset > 300) {
-      navbar?.classList.add("nav-scroll");
-    } else {
-      navbar?.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar?.classList.add("nav-scroll");
-      } else {
-        navbar?.classList.remove("nav-scroll");
-      }
-    });
-    return () => {
-      document.querySelector("body").classList.remove("contact-page");
-    };
-  }, [navbarRef]);
+
 
   return (
     <LightTheme>

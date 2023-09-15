@@ -11,29 +11,11 @@ import Split from "../../components/Split";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
 const BlogDetailsLight = () => {
-  const navbarRef = React.useRef(null);
-  const logoRef = React.useRef(null);
+
   const {t} = useTranslation()
 
-  React.useEffect(() => {
-    var navbar = navbarRef.current,
-      logo = logoRef.current;
-    if (window.pageYOffset > 300) {
-      navbar?.classList.add("nav-scroll");
-    } else {
-      navbar?.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar?.classList.add("nav-scroll");
-      } else {
-        navbar?.classList.remove("nav-scroll");
-      }
-    });
-  }, [navbarRef]);
   return (
     <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} />
       <PagesHeader
         title={t('cases.caseTwoTitle')}
       />

@@ -3,6 +3,7 @@ import React from "react";
 import Head from "next/head";
 import Loader from "../common/loader";
 import useMediaQuery from "../hooks/useMediaQuery";
+import Navbar from "../components/Navbar/navbar";
 const LightTheme = ({ children, mobileappstyle }) => {
   const [isLoading, setIsLoading] = React.useState(true)
   const windowWidth = useMediaQuery()
@@ -15,6 +16,25 @@ const LightTheme = ({ children, mobileappstyle }) => {
       setIsLoading(false)
     }
   },[windowWidth])
+
+  const navbarRef = React.useRef(null);
+  const logoRef = React.useRef(null);
+  React.useEffect(() => {
+      var navbar = navbarRef.current,
+        logo = logoRef.current;
+      if (window.pageYOffset > 300) {
+        navbar?.classList.add("nav-scroll");
+      } else {
+        navbar?.classList.remove("nav-scroll");
+      }
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          navbar?.classList.add("nav-scroll");
+        } else {
+          navbar?.classList.remove("nav-scroll");
+        }
+      });
+  }, [navbarRef]);
   return (
     <>
       <Head>
@@ -25,6 +45,8 @@ const LightTheme = ({ children, mobileappstyle }) => {
           ""
         )}
       </Head>
+      <Navbar nr={navbarRef} lr={logoRef} />
+
       {isLoading ? (
         <Loader />
       ) : (

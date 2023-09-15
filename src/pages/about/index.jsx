@@ -14,29 +14,12 @@ import MinimalArea from "../../components/Minimal-Area/minimal-area";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const navbarRef = React.useRef(null);
-  const logoRef = React.useRef(null);
+
   const {t} = useTranslation()
-  React.useEffect(() => {
-    var navbar = navbarRef.current,
-      logo = logoRef.current;
-    if (window.pageYOffset > 300) {
-      navbar?.classList.add("nav-scroll");
-    } else {
-      navbar?.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar?.classList.add("nav-scroll");
-      } else {
-        navbar?.classList.remove("nav-scroll");
-      }
-    });
-  }, [navbarRef]);
+ 
 
   return (
     <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} />
       <PagesHeader title={t('home.sliderTwo')} />
       <AboutIntro />
       <MinimalArea />

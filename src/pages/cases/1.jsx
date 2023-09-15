@@ -15,28 +15,9 @@ const BlogDetailsLight = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
   const {t} = useTranslation()
 
-  const navbarRef = React.useRef(null);
-  const logoRef = React.useRef(null);
 
-  React.useEffect(() => {
-    var navbar = navbarRef.current,
-      logo = logoRef.current;
-    if (window.pageYOffset > 300) {
-      navbar?.classList.add("nav-scroll");
-    } else {
-      navbar?.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar?.classList.add("nav-scroll");
-      } else {
-        navbar?.classList.remove("nav-scroll");
-      }
-    });
-  }, [navbarRef]);
   return (
     <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} />
       <PagesHeader
         title={t('cases.caseOneTitle')}
       />
