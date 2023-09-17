@@ -20,8 +20,8 @@ const MinimalArea = () => {
     <section className="min-area" >
       <div className="container">
         <div className="row">
-          {/* <div className="col-lg-6">
-          <ReactPlayer
+          <div className="col-lg-6">
+          {/* <ReactPlayer
       url={"/final/video-about.mp4"}
       playing
       loop
@@ -30,8 +30,9 @@ const MinimalArea = () => {
       width="100%"
       height={isDesktop && '50vh'}
       style={{ margin: 'auto' }}
-    />
-          </div> */}
+    /> */}
+    <img src="/final/dental-about.jpeg" />
+          </div>
           <div className="col-lg-12 valign">
             <div className="content pt-0">
               <p className="wow txt mt-4 mt-md-0" data-splitting style={{textAlign : i18n.language === "ar" ? "right" : 'left'}}>

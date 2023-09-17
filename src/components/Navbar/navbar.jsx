@@ -87,6 +87,15 @@ const Navbar = ({ lr, nr, theme }) => {
                 <Link href={`/services/crowns-and-bridges`}>
                   <a className="dropdown-item">{t('services.crownsTitle')}</a>
                 </Link>
+                <Link href={`/services/braces`}>
+                  <a className="dropdown-item">{t('services.bracesTitle')}</a>
+                </Link>
+                <Link href={`/services/implant`}>
+                  <a className="dropdown-item">{t('services.implantTitle')}</a>
+                </Link>
+                <Link href={`/services/children`}>
+                  <a className="dropdown-item">{t('services.childrenTitle')}</a>
+                </Link>
               </div>
             </li>
             <li className="nav-item">

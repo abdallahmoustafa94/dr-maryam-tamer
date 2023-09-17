@@ -99,20 +99,24 @@ const IntroWithSlider = ({ sliderRef }) => {
 
               <div
                 className="bg-img valign"
-                style={{ backgroundImage: isMobile ? `url(/final/sliderbgnew.avif)` : `url(/final/cover-2.jpeg)` }}
+                style={{ backgroundImage: isMobile ? `url(/final/slider-new.jpeg)` : `url(/final/cover-2.jpeg)` }}
                 data-overlay-dark="6"
               >
                 <div className="container">
                   <div className="row justify-content-center">
                     <div className="col-lg-8 col-md-10">
-                      <div className="caption center mt-30">
-                        <h1 >{t('common.drMaryamTamerClinic')}</h1>
-                        <p style={{ fontSize: '24px' }}>{t('home.sliderOne')}</p>
-                        <Link href="/contact/">
-                          <a className="butn bord curve mt-30">
-                            <span>{t('common.getAnAppointment')}</span>
-                          </a>
-                        </Link>
+                      <div className="caption center mt-30" >
+                      <div style={{ background: 'rgba(254, 228, 123, 0.6)', padding: '16px 6px' }}>
+  <h1>{t('common.drMaryamTamerClinic')}</h1>
+  <p style={{ fontSize: '24px' }}>{t('home.sliderOne')}</p>
+  <Link href="/contact/">
+    <a className="butn bord curve mt-30" >
+      <span >{t('common.getAnAppointment')}</span>
+    </a>
+  </Link>
+</div>
+
+                          
                       </div>
                     </div>
                   </div>
@@ -123,20 +127,20 @@ const IntroWithSlider = ({ sliderRef }) => {
             <SwiperSlide className="swiper-slide">
               <div
                 className="bg-img move valign"
-                style={{ backgroundImage: isMobile ? `none` : `url(/final/cover.jpeg)` }}
+                style={{ backgroundImage: isMobile ? `url(/final/slide-new-2.jpeg)` : `url(/final/cover.jpeg)` }}
                 data-overlay-dark="6"
               >
 
-                {isMobile && (
+                {/* {isMobile && (
 
                   <video id="my-video" data-overlay-dark="6" className="bg-img valign hero-video" style={{ height: '100vh' }} playsInline preload="auto" autoPlay loop muted>
                     <source src={"/final/case1video.mp4"} type="video/mp4" />
                   </video>
-                )}
+                )} */}
                 <div className="container">
                   <div className="row justify-content-center">
                     <div className="col-lg-8 col-md-10">
-                      <div className="caption center mt-30">
+                      <div className="caption center mt-30" style={{ background: 'rgba(254, 228, 123, 0.6)', padding: '16px 6px' }}>
                         <h1>{t('common.drMaryamTamerClinic')}</h1>
                         <p style={{ fontSize: '24px' }}>{t('home.sliderTwo')}</p>
                         <Link href="/contact/">

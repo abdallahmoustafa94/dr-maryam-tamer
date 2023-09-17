@@ -95,7 +95,7 @@ p {
 
 @media screen and (max-width: 991px) {
   .navbar .navbar-collapse {
-    max-height: 340px;
+    max-height: 594px;
     overflow: auto;
     background: #262626;
     text-align: center;

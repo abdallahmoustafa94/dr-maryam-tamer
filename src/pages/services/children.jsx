@@ -9,33 +9,32 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import Split from "../../components/Split";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
-const About = () => {
-  const navbarRef = React.useRef(null);
-  const logoRef = React.useRef(null);
-  const isMobile = useMediaQuery('(max-width: 768px)');
-  const {t} = useTranslation()
 
+const About = () => {
+
+  const {t} = useTranslation()
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
     <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} />
-      <PagesHeader title={t('services.bleachingTitle')} />
+      <PagesHeader title={t('services.childrenTitle')}/>
       <section className="intro-section py-5 pb-5">
         <div className="container">
           <div className="row">
-          <div className="col-lg-4">
-                  <div className="wow imago valign " data-wow-delay=".3s">
-                    <img src="/final/Bleaching.JPG" alt="" />
-                  </div>
-          </div>
+            <div className="col-lg-4">
+              <div className="wow imago valign " data-wow-delay=".3s">
+                <img src="/final/children.png" alt="" style={{ width: isMobile ? "100%" : "90%" }} />
+              </div>
+            </div>
 
             <div className="col-lg-8  col-md-8 valign py-5" >
-              <div className="text " dir="rtl" style={{textAlign:'right'}}>
+              <div className="text">
                   <p
                     className="wow txt mb-10 words chars splitting"
-                    style={{textAlign : i18n.language === 'ar' ? 'right' : 'left'}}
+                    data-splitting
+                    style={{textAlign: i18n.language === "ar" ? 'right' : 'left'}}
                   >
-                    {t('services.bleachingShortDesc')}
+                  {t('services.childrenDesc')}
                   </p>
 
               </div>
