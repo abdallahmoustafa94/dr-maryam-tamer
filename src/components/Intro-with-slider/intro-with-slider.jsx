@@ -109,7 +109,7 @@ const IntroWithSlider = ({ sliderRef }) => {
                       <div style={{ background: 'rgba(254, 228, 123, 0.6)', padding: '16px 6px' }}>
   <h1>{t('common.drMaryamTamerClinic')}</h1>
   <p style={{ fontSize: '24px' }}>{t('home.sliderOne')}</p>
-  <Link href="/contact/">
+  <Link href="tel:00201095125220">
     <a className="butn bord curve mt-30" >
       <span >{t('common.getAnAppointment')}</span>
     </a>
@@ -143,7 +143,7 @@ const IntroWithSlider = ({ sliderRef }) => {
                       <div className="caption center mt-30" style={{ background: 'rgba(254, 228, 123, 0.6)', padding: '16px 6px' }}>
                         <h1>{t('common.drMaryamTamerClinic')}</h1>
                         <p style={{ fontSize: '24px' }}>{t('home.sliderTwo')}</p>
-                        <Link href="/contact/">
+                        <Link href="tel:00201095125220">
                           <a className="butn bord curve mt-30">
                             <span>{t('common.getAnAppointment')}</span>
                           </a>
