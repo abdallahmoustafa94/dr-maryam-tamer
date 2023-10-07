@@ -138,7 +138,7 @@ const {t} = useTranslation()
 </a>
 
               </Col>
-              <Col xs={{span:12, order:2}} sm={6} style={{background:`url(/final/popup.jpeg)`,backgroundSize:'cover', backgroundPosition:'center center', minHeight: '200px'}}>
+              <Col xs={{span:12, order:2}} sm={6} style={{background:`url(/final/popup.webp)`,backgroundSize:'cover', backgroundPosition:'center center', minHeight: '200px'}}>
               
               </Col>
             </Row>

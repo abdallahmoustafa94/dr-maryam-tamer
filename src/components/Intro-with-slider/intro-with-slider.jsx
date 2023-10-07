@@ -99,7 +99,7 @@ const IntroWithSlider = ({ sliderRef }) => {
 
               <div
                 className="bg-img valign"
-                style={{ backgroundImage: isMobile ? `url(/final/slider-new.jpeg)` : `url(/final/cover-2.jpeg)` }}
+                style={{ backgroundImage: isMobile ? `url(/final/slider-new.webp)` : `url(/final/cover-2.jpeg)` }}
                 data-overlay-dark="6"
               >
                 <div className="container">
