@@ -107,7 +107,7 @@ body.hideX .pace {
   border: 3px solid transparent;
   /* Apply linear gradient to the border with updated colors and visual effect */
   -o-border-image: linear-gradient(to right, #999999, #cccccc 50%, #999999) 1;
-     border-image: linear-gradient(to right, #999999, #cccccc 50%, #999999) 1;
+  border-image: linear-gradient(to right, #999999, #cccccc 50%, #999999) 1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease-in-out;
   overflow: hidden;
@@ -165,7 +165,7 @@ body.hideX .pace {
 
 .overlay-video video {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -201,4 +201,22 @@ body.hideX .pace {
   text-align: right;
 }
 
-/* Add other global RTL styles as needed *//*# sourceMappingURL=main.css.map */
+/* Add other global RTL styles as needed */ /*# sourceMappingURL=main.css.map */
+
+/* Custom CSS to change the close button appearance for RTL */
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+}
+
+/* For better alignment on RTL websites */
+[dir="rtl"] .modal-header .close {
+  right: auto;
+  left: 0;
+}
