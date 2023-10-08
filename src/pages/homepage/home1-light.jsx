@@ -46,11 +46,9 @@ const {t} = useTranslation()
   React.useEffect(() => {
     // Set a timer to show the modal after 1 second
     const timer = setTimeout(() => {
-      // Check the screen width and decide whether to show the modal
-      const screenWidth = window.innerWidth;
-      if (screenWidth < 768) {
+    
         setOfferModal(true); // Show the modal for screens smaller than Bootstrap's 'sm' (576px)
-      }
+      
     }, 2000);
 
     // Clear the timer if the component unmounts or if you want to cancel it for some reason
@@ -104,6 +102,7 @@ const {t} = useTranslation()
         onHide={() => setOfferModal(false)}
         aria-labelledby="example-modal-sizes-title-lg"
         centered
+        
         dir="rtl"
       >
         
