@@ -11,7 +11,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import Carousel from 'react-bootstrap/Carousel';
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
-
+import Image from 'next/image';
 const About = () => {
 
  const isMobile = useMediaQuery('(max-width: 768px)');
@@ -33,19 +33,21 @@ const About = () => {
 
 <Carousel slide={false}>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/case3.JPG"
-          alt=""
-        />
+      <Image
+                    src="/final/case3.webp"
+                    alt=""
+                 width={400}
+                 height={600}
+                  />
       
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/case3-2.JPG"
-          alt=""
-        />
+      <Image
+                    src="/final/case3-2.webp"
+                    alt=""
+                    width={400}
+                    height={600}
+                  />
 
      
       </Carousel.Item>

@@ -127,7 +127,7 @@ const IntroWithSlider = ({ sliderRef }) => {
             <SwiperSlide className="swiper-slide">
               <div
                 className="bg-img move valign"
-                style={{ backgroundImage: isMobile ? `url(/final/slide-new-2.jpeg)` : `url(/final/cover.jpeg)` }}
+                style={{ backgroundImage: isMobile ? `url(/final/slide-new-2.webp)` : `url(/final/cover.jpeg)` }}
                 data-overlay-dark="6"
               >
 

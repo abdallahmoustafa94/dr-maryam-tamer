@@ -9,6 +9,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import Split from "../../components/Split";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
+import Image from 'next/image';
 
 const About = () => {
 
@@ -23,7 +24,7 @@ const About = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className="wow imago valign " data-wow-delay=".3s">
-                <img src="/final/children.png" alt="" style={{ width: isMobile ? "100%" : "90%" }} />
+                <Image src="/final/children.webp" alt="" width={400} height={400} />
               </div>
             </div>
 

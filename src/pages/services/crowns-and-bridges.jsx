@@ -8,6 +8,7 @@ import LightTheme from '../../layouts/Light'
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
 import Split from "../../components/Split";
+import Image from 'next/image';
 
 const About = () => {
  
@@ -22,7 +23,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4">
                   <div className="wow imago valign " data-wow-delay=".3s">
-                    <img src="/final/Crowns.JPG" alt="" />
+                    <Image width={400} height={600} src="/final/Crowns.webp" alt="" />
                   </div>
           </div>
                

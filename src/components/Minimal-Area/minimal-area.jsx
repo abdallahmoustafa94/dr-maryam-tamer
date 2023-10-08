@@ -6,6 +6,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import ReactPlayer from "react-player";
 import { useTranslation } from "react-i18next";
 import  i18n from "../../../config/i18n";
+import Image from 'next/image';
 
 const MinimalArea = () => {
   const {t} = useTranslation()
@@ -31,8 +32,12 @@ const MinimalArea = () => {
       height={isDesktop && '50vh'}
       style={{ margin: 'auto' }}
     /> */}
-    <img src="/final/dental-about.jpeg" />
-          </div>
+ <Image
+    src="/final/dental-about.webp"
+    alt="image"
+  width={400}
+  height={400}
+  />          </div>
           <div className="col-lg-12 valign">
             <div className="content pt-0">
               <p className="wow txt mt-4 mt-md-0" data-splitting style={{textAlign : i18n.language === "ar" ? "right" : 'left'}}>

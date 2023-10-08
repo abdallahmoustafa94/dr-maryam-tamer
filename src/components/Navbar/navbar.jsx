@@ -5,6 +5,7 @@ import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
 import { useTranslation } from 'react-i18next';
 import i18n from "../../../config/i18n";
+import Image from 'next/image'; 
 
 
 const Navbar = ({ lr, nr, theme }) => {
@@ -21,12 +22,12 @@ const Navbar = ({ lr, nr, theme }) => {
           <a className="logo">
             {theme ? (
               theme === "themeL" ? (
-                <img ref={lr} src="/final/logo.png" alt="logo" />
+                <Image width={70} height={70} ref={lr} src="/final/logo.webp" alt="logo" />
               ) : (
-                <img ref={lr} src="/final/logo.png" alt="logo" />
+                <Image width={70} height={70} ref={lr} src="/final/logo.webp" alt="logo" />
               )
             ) : (
-              <img ref={lr} src="/final/logo.png" alt="logo" style={{width:'50px'}}/>
+              <Image width={50} height={50} ref={lr} src="/final/logo.webp" alt="logo" />
             )}
           </a>
         </Link>

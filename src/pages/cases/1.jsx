@@ -11,6 +11,8 @@ import Split from "../../components/Split";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
+import Image from 'next/image';
+
 const BlogDetailsLight = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
   const {t} = useTranslation()
@@ -26,7 +28,7 @@ const BlogDetailsLight = () => {
           <div className="row justify-content-center">
             <div className="col-md-4 order-2 order-md-1">
               <div className="mb-10">
-                <img src="/final/case1.JPG" alt="" />
+                <Image width={400} height={600} src="/final/case1.webp" alt="" />
               </div>
             </div>
             <div className="col-lg-8 order-1 order-md-2">

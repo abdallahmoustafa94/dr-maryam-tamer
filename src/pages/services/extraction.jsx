@@ -10,6 +10,8 @@ import Split from "../../components/Split";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
+import Image from 'next/image';
+
 const About = () => {
 
  const isMobile = useMediaQuery('(max-width: 768px)');
@@ -24,7 +26,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4">
                   <div className="wow imago valign " data-wow-delay=".3s">
-                    <img src="/final/tooth-extraction.png" alt="" style={{width:isMobile ? '100%': '90%'}}/>
+                    <Image src="/final/tooth-extraction.webp" alt="" width={400} height={400} />
                   </div>
           </div>
                

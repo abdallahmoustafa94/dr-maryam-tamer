@@ -4,6 +4,8 @@ import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../config/i18n";
+import Image from 'next/image';
+
 const Portfolio = ({ grid, filterPosition }) => {
   React.useEffect(() => {
     setTimeout(() => {
@@ -32,7 +34,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                  <img src="/final/case1.JPG" alt="image" />
+                  <Image width={400} height={600} src="/final/case1.webp" alt="image" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -60,7 +62,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                  <img src="/final/case2.jpg" alt="image" />
+                  <img width={400} height={600} src="/final/case2.webp" alt="image" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -87,7 +89,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                  <img src="/final/case3.JPG" alt="image" />
+                  <img width={400} height={600} src="/final/case3.webp" alt="image" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -114,7 +116,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                  <img src="/final/case4.JPG" alt="image" />
+                  <img width={400} height={600} src="/final/case4.webp" alt="image" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
