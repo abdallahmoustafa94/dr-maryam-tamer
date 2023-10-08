@@ -28,6 +28,7 @@ const Homepage1 = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
   const [offerModal, setOfferModal] = useState(false)
+  const [imageLoaded, setImageLoaded] = useState(false)
 const {t} = useTranslation()
   React.useEffect(() => {
     setInterval(() => {
@@ -55,6 +56,14 @@ const {t} = useTranslation()
     return () => clearTimeout(timer);
   }, []);
   
+  React.useEffect(() => {
+    const image = new Image();
+    image.src = "/final/popup.webp";
+
+    image.onload = () => {
+      setImageLoaded(true);
+    };
+  }, []);
 
 
   const buttonStyle = {
@@ -98,11 +107,11 @@ const {t} = useTranslation()
       <Modal
       style={{ zIndex:10000000}}
         size="lg"
-        show={offerModal}
+        show={offerModal && imageLoaded}
         onHide={() => setOfferModal(false)}
         aria-labelledby="example-modal-sizes-title-lg"
         centered
-        
+        className="mobile-modal "
         dir="rtl"
       >
         
