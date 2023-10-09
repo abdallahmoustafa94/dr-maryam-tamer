@@ -61,7 +61,7 @@ class MyDocument extends Document {
           />
       
           <meta name="google-site-verification" content="KVBmKEI1uEVRySQHHK8Rtsw-Vl0qjA_TApidKSiN0d4" />
-          <script async
+          <script 
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){
