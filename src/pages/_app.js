@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>عيادة دكتورة مريم تامر</title>
-        <link rel="icon" href="/final/logo.png" />
+        <link rel="icon" href="/final/logo.webp" />
         <link
   href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
   rel="stylesheet"

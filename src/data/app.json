@@ -1,5 +1,5 @@
 {
-    "lightLogo": "/final/logo.png",
-    "darkLogo": "/final/logo.png",
-    "showLoading": true
+  "lightLogo": "/final/logo.webp",
+  "darkLogo": "/final/logo.webp",
+  "showLoading": true
 }
