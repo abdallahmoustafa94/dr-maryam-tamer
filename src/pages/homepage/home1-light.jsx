@@ -50,7 +50,7 @@ const {t} = useTranslation()
     
         setOfferModal(true); // Show the modal for screens smaller than Bootstrap's 'sm' (576px)
       
-    }, 2000);
+    }, 3000);
 
     // Clear the timer if the component unmounts or if you want to cancel it for some reason
     return () => clearTimeout(timer);
