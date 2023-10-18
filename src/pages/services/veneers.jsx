@@ -33,21 +33,18 @@ const About = () => {
 
 <Carousel slide={false}>
       <Carousel.Item>
-      <Image
-                    src="/final/case3.webp"
-                    alt=""
-                 width={400}
-                 height={600}
-                  />
-      
+      <img
+          className="d-block w-100"
+          src="/case3.JPG"
+          alt=""
+        />
       </Carousel.Item>
       <Carousel.Item>
-      <Image
-                    src="/final/case3-2.webp"
-                    alt=""
-                    width={400}
-                    height={600}
-                  />
+      <img
+          className="d-block w-100"
+          src="/case3-2.JPG"
+          alt=""
+        />
 
      
       </Carousel.Item>

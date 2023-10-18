@@ -45,15 +45,20 @@ const {t} = useTranslation()
   }, [fixedSlider, MainContent, navbarRef]);
 
   React.useEffect(() => {
-    // Set a timer to show the modal after 1 second
-    const timer = setTimeout(() => {
-    
-        setOfferModal(true); // Show the modal for screens smaller than Bootstrap's 'sm' (576px)
-      
-    }, 3000);
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
 
-    // Clear the timer if the component unmounts or if you want to cancel it for some reason
-    return () => clearTimeout(timer);
+      if (scrollTop > documentHeight * 0.5) {
+        setOfferModal(true);
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
   
   React.useEffect(() => {
@@ -64,7 +69,6 @@ const {t} = useTranslation()
       setImageLoaded(true);
     };
   }, []);
-
 
   const buttonStyle = {
     padding: '15px', 

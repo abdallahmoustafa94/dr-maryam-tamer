@@ -22,12 +22,12 @@ const Navbar = ({ lr, nr, theme }) => {
           <a className="logo">
             {theme ? (
               theme === "themeL" ? (
-                <Image width={70} height={70} ref={lr} src="/final/logo.webp" alt="logo" />
+                <img ref={lr} src="/final/logo.png" alt="logo" />
               ) : (
-                <Image width={70} height={70} ref={lr} src="/final/logo.webp" alt="logo" />
+                <img ref={lr} src="/final/logo.png" alt="logo" />
               )
             ) : (
-              <Image width={50} height={50} ref={lr} src="/final/logo.webp" alt="logo" />
+              <img ref={lr} src="/final/logo.png" alt="logo" style={{width:'50px'}}/>
             )}
           </a>
         </Link>

@@ -32,12 +32,7 @@ const MinimalArea = () => {
       height={isDesktop && '50vh'}
       style={{ margin: 'auto' }}
     /> */}
- <Image
-    src="/final/dental-about.webp"
-    alt="image"
-  width={400}
-  height={400}
-  />          </div>
+<img src="/final/dental-about.jpeg" />        </div>
           <div className="col-lg-12 valign">
             <div className="content pt-0">
               <p className="wow txt mt-4 mt-md-0" data-splitting style={{textAlign : i18n.language === "ar" ? "right" : 'left'}}>
