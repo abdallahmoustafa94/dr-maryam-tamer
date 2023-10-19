@@ -24,7 +24,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/cavity.webp" width={60} height={60} alt="Cavity Image" />
+                <Image src="/final/cavity.webp" width={60} height={60} alt="افضل دكتور اسنان في مدينة نصر" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.compositeTitle')}</h6>
@@ -42,7 +42,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/root-canal.webp" width={60} height={60} alt="Root Canal Image" />
+                <Image src="/final/root-canal.webp" width={60} height={60} alt="دكتور اسنان" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.rootCanalTitle')}</h6>
@@ -60,7 +60,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/dental-veneer.webp" width={60} height={60} alt="Dental Veneer Image" />
+                <Image src="/final/dental-veneer.webp" width={60} height={60} alt="طبيب اسنان" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.veneersTitle')}</h6>
@@ -80,7 +80,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/tooth-extraction.webp" width={60} height={60} alt="Tooth Extraction Image" />
+                <Image src="/final/tooth-extraction.webp" width={60} height={60} alt="دكتور اسنان قريب مني" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.extractionTitle')}</h6>
@@ -98,7 +98,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/bleaching.webp" width={60} height={60} alt="Bleaching Image" />
+                <Image src="/final/bleaching.webp" width={60} height={60} alt="افضل عيادة اسنان في مدينة نصر" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.bleachingTitle')}</h6>
@@ -116,7 +116,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/bridge.webp" width={60} height={60} alt="Bridge Image" />
+                <Image src="/final/bridge.webp" width={60} height={60} alt="افضل دكتور اسنان في مدينة نصر" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.crownsTitle')}</h6>
@@ -136,7 +136,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/braces.webp" width={60} height={60} alt="Braces Image" />
+                <Image src="/final/braces.webp" width={60} height={60} alt="افضل دكتور اسنان في مدينة نصر" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.bracesTitle')}</h6>
@@ -154,7 +154,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/implant.webp" width={60} height={60} alt="Implant Image" />
+                <Image src="/final/implant.webp" width={60} height={60} alt="افضل دكتور اسنان في مدينة نصر" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.implantTitle')}</h6>
@@ -172,7 +172,7 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-4 wow fadeInLeft" data-wow-delay='.5'>
             <div className="item-box">
               <div>
-                <Image src="/final/children.webp" width={60} height={60} alt="Children Image" />
+                <Image src="/final/children.webp" width={60} height={60} alt="افضل عيادة اسنان في مدينة نصر" />
               </div>
               <div className="cont">
                 <h6 style={{ fontWeight: 'bold' }}>{t('services.childrenTitle')}</h6>

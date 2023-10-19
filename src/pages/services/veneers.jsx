@@ -36,14 +36,14 @@ const About = () => {
       <img
           className="d-block w-100"
           src="/case3.JPG"
-          alt=""
+          alt="افضل دكتور اسنان في مدينة نصر"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
           className="d-block w-100"
           src="/case3-2.JPG"
-          alt=""
+          alt="افضل عيادة اسنان في مدينة نصر"
         />
 
      

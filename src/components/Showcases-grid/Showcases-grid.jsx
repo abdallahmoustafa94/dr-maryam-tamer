@@ -69,7 +69,7 @@ const {t} = useTranslation()
 
             <div >
               <a className="">
-                <img src="/final/case1.JPG" alt="image" style={{width: !isMobile && '65%'}}/>
+                <img src="/final/case1.JPG" alt="افضل عيادة اسنان في مدينة نصر" style={{width: !isMobile && '65%'}}/>
                 {/* <div className="item-img-overlay"></div> */}
               </a>
             </div>
@@ -91,7 +91,7 @@ const {t} = useTranslation()
 
               <div >
                 <a className="">
-                  <img src="/final/case2.jpg" alt="image" style={{width: !isMobile && '65%'}}/>
+                  <img src="/final/case2.jpg" alt="افضل دكتور اسنان في مدينة نصر" style={{width: !isMobile && '65%'}}/>
                   {/* <div className="item-img-overlay"></div> */}
                 </a>
               </div>
@@ -113,7 +113,7 @@ const {t} = useTranslation()
 
               <div >
                 <a className="">
-                  <img src="/final/case3.JPG" alt="image" style={{width: !isMobile && '65%'}}/>
+                  <img src="/final/case3.JPG" alt="افضل دكتور اسنان في مدينة نصر" style={{width: !isMobile && '65%'}}/>
                   {/* <div className="item-img-overlay"></div> */}
                 </a>
               </div>
@@ -135,7 +135,7 @@ const {t} = useTranslation()
 
               <div >
                 <a className="">
-                  <img src="/final/case4.JPG" alt="image" style={{width: !isMobile && '65%'}}/>
+                  <img src="/final/case4.JPG" alt="افضل عيادة اسنان في مدينة نصر" style={{width: !isMobile && '65%'}}/>
                   {/* <div className="item-img-overlay"></div> */}
                 </a>
               </div>

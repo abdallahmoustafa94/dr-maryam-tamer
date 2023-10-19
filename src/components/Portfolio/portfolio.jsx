@@ -34,7 +34,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                <img src="/final/case1.JPG" alt="image" />
+                <img src="/final/case1.JPG" alt="افضل دكتور اسنان في مدينة نصر" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -62,7 +62,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                <img src="/final/case2.jpg" alt="image" />
+                <img src="/final/case2.jpg" alt="افضل عيادة اسنان في مدينة نصر" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -89,7 +89,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                <img src="/final/case3.JPG" alt="image" />
+                <img src="/final/case3.JPG" alt="افضل دكتور اسنان في مدينة نصر" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -116,7 +116,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 <a className="imago wow">
-                <img src="/final/case4.JPG" alt="image" />
+                <img src="/final/case4.JPG" alt="افضل عيادة اسنان في مدينة نصر" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>

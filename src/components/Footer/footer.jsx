@@ -51,7 +51,7 @@ const Footer = ({ hideBGCOLOR }) => {
           <div className="col-lg-6">
             <div className="item">
               <div className="logo">
-                <img src={appData.lightLogo} alt="" />
+                <img src={appData.lightLogo} alt="افضل دكتور اسنان في مدينة نصر" />
               </div>
               <div className="social">
                 <a href="#0">

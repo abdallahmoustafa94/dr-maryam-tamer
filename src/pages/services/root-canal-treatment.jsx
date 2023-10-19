@@ -28,7 +28,7 @@ const About = () => {
                   <div className="wow imago valign " data-wow-delay=".3s">
                   <Image
   src="/final/services1.webp"
-  alt=""
+  alt="افضل عيادة اسنان في مدينة نصر"
   width={400}
   height={600}
 />

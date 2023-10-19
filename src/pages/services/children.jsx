@@ -24,7 +24,7 @@ const About = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className="wow imago valign " data-wow-delay=".3s">
-                <Image src="/final/children.webp" alt="" width={400} height={400} />
+                <Image src="/final/children.webp" alt="افضل عيادة اسنان في مدينة نصر" width={400} height={400} />
               </div>
             </div>
 

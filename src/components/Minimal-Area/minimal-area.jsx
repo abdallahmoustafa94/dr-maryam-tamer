@@ -32,7 +32,7 @@ const MinimalArea = () => {
       height={isDesktop && '50vh'}
       style={{ margin: 'auto' }}
     /> */}
-<img src="/final/dental-about.jpeg" />        </div>
+<img src="/final/dental-about.jpeg" alt="افضل دكتور اسنان في مدينة نصر"/>        </div>
           <div className="col-lg-12 valign">
             <div className="content pt-0">
               <p className="wow txt mt-4 mt-md-0" data-splitting style={{textAlign : i18n.language === "ar" ? "right" : 'left'}}>

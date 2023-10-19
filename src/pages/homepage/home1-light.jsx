@@ -44,31 +44,7 @@ const {t} = useTranslation()
     
   }, [fixedSlider, MainContent, navbarRef]);
 
-  React.useEffect(() => {
-    const handleScroll = () => {
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollTop = window.scrollY;
-
-      if (scrollTop > documentHeight * 0.5) {
-        setOfferModal(true);
-        window.removeEventListener('scroll', handleScroll);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-  
-  React.useEffect(() => {
-    const image = new Image();
-    image.src = "/final/popup.webp";
-
-    image.onload = () => {
-      setImageLoaded(true);
-    };
-  }, []);
+ 
 
   const buttonStyle = {
     padding: '15px', 
@@ -108,55 +84,7 @@ const {t} = useTranslation()
         <Footer />
       </div>
      
-      <Modal
-      style={{ zIndex:10000000}}
-        size="lg"
-        show={offerModal && imageLoaded}
-        onHide={() => setOfferModal(false)}
-        aria-labelledby="example-modal-sizes-title-lg"
-        centered
-        className="mobile-modal "
-        dir="rtl"
-      >
-        
-        <Modal.Header >
-    <AiOutlineClose  onClick={() => setOfferModal(false)} style={{cursor:'pointer'}} size={24}/>
-        </Modal.Header>
-        <Modal.Body>
-            <Row style={{height:'70vh'}}>
-              <Col xs={{span:12, order:1}} sm={6} >
-            <h1 style={{ fontSize: '32px', fontFamily: 'Cairo', fontWeight: '700' }} className="text-center">مرحبًا بك في  </h1>
-            <h1 style={{ fontSize: '32px', fontFamily: 'Cairo', fontWeight: '700' }} className="text-center">  عيادة د.مريم تامر</h1>
-  <h2 style={{ fontSize: '20px', fontFamily: 'Cairo' }} className="text-right mt-4">اتصل بنا الأن واسأل عن عروض شهر اكتوبر</h2>
-  
       
-      
-      <a
-      className="call"
-        style={{ ...buttonStyle, backgroundColor: '#007bff',bottom:'150px', marginTop:40 }}
-        href="tel:00201095125220"
-      >
-          <FiPhoneCall  className="call" style={{fontSize:'22px'}}/>
-          <span className="call inline-block mr-2" >اتصل بنا</span>
-      </a>    
-
-      <a
-  className="whatsapp"
-  style={{ ...buttonStyle, backgroundColor: '#25d366', marginTop:12 }}
-  href="https://wa.me/201095125220"
->
-  <FaWhatsapp className="whatsapp" style={{fontSize:'22px'}}/>
-  <span className="whatsapp inline-block mr-2" >احجز الان على واتساب</span>
-</a>
-
-              </Col>
-              <Col xs={{span:12, order:2}} sm={6} style={{background:`url(/final/popup.webp)`,backgroundSize:'cover', backgroundPosition:'center center', minHeight: '200px'}}>
-              
-              </Col>
-            </Row>
-          
-        </Modal.Body>
-      </Modal>
     </LightTheme>
   );
 };
