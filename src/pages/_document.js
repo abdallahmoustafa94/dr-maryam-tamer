@@ -91,7 +91,7 @@ class MyDocument extends Document {
             ></iframe>
           </noscript>
   
-          <a
+          {/* <a
   className="whatsapp"
   style={{ ...buttonStyle, backgroundColor: '#25d366',animation: 'pulse 2s infinite' }}
   href="https://wa.me/201095125220"
@@ -109,7 +109,7 @@ class MyDocument extends Document {
       >
           <FiPhoneCall  className="call" style={{fontSize:'22px'}}/>
           <span className="call inline-block mr-2" >اتصل بنا</span>
-      </a>    
+      </a>     */}
         </body>
       </Html>
     );

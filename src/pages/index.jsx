@@ -8,8 +8,9 @@ const Home = () => {
 
   return (
     <>
-      <Homepage1 />
-      <LanguageSwitcher />
+      {/* <Homepage1 />
+      <LanguageSwitcher /> */}
+      <p style={{textAlign:'center'}}>Maintenance Mode</p>
     </>
   );
 };
