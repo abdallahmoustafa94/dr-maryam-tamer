@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }) {
       console.log(windowWidth)
   return (
     <>
-      {/* <Head> redo
+      <Head> 
         <title>عيادة دكتورة مريم تامر</title>
         <link rel="icon" href="/final/logo.webp" />
         <link
@@ -71,14 +71,14 @@ function MyApp({ Component, pageProps }) {
 />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      </Head> */}
+      </Head>
       <Cursor />
-      {/* <LoadingScreen  redo/> */}
-      {/* {isLoading && redo(
+      {/* <LoadingScreen  /> */}
+      {isLoading && (
         <Loader / >
-      )} */}
+      )}
       <Component {...pageProps} />
-      {/* <ScrollToTop /> redo*/} 
+      <ScrollToTop /> 
       {/* <Script strategy="beforeInteractive" id="wow" src="/js/wow.min.js"></Script> */}
       <Script
         strategy="beforeInteractive"
