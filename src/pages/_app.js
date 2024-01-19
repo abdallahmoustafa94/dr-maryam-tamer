@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head> 
-        <title>عيادة دكتورة مريم تامر</title>
+        <title>عيادة الدكتورة مريم البسيوني - أفضل عيادة اسنان في مدينة نصر</title>
         <link rel="icon" href="/final/logo.webp" />
         <link
   href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
