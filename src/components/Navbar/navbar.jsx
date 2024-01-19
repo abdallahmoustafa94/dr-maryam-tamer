@@ -19,7 +19,7 @@ const Navbar = ({ lr, nr, theme }) => {
     >
       <div className="container">
         <Link href="/">
-          <a className="logo">
+          <a className="logo" style={{marginRight:"10px"}}>
             {theme ? (
               theme === "themeL" ? (
                 <img ref={lr} src="/final/logo.png" alt="logo" />
